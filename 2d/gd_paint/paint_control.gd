@@ -239,7 +239,7 @@ func _draw():
 
 func save_picture(path):
 	# Wait until the frame has finished before getting the texture.
-	yield(VisualServer, "frame_post_draw")
+	yield(RenderingServer, "frame_post_draw")
 
 	# Get the viewport image.
 	var img = get_viewport().get_texture().get_data()

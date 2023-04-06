@@ -45,4 +45,3 @@ visible = false
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2( 640, 360 )
-current = true

@@ -10,8 +10,8 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "KinematicBody2D",
-"class": "Player",
-"language": "GDScript",
+"class": @"Player",
+"language": @"GDScript",
 "path": "res://player/player.gd"
 } ]
 _global_script_class_icons={
@@ -86,7 +86,6 @@ limits/debugger_stdout/max_chars_per_second=1000000
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
 2d/snapping/use_gpu_pixel_snap=true
 vram_compression/import_etc=true
 vram_compression/import_etc2=false

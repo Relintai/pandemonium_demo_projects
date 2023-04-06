@@ -20,14 +20,14 @@ onready var follow = $Top/Area/Follow
 onready var follow_2 = $Top/Area/Follow2
 onready var size = $Top/Area.get_size()
 
-onready var move_mode = modes_vbox.get_node(@"Move")
-onready var color_mode = modes_vbox.get_node(@"Color")
-onready var scale_mode = modes_vbox.get_node(@"Scale")
-onready var rotate_mode = modes_vbox.get_node(@"Rotate")
-onready var callback_mode = modes_vbox.get_node(@"Callback")
-onready var follow_mode = modes_vbox.get_node(@"Follow")
-onready var repeat_mode = modes_vbox.get_node(@"Repeat")
-onready var paused_mode = modes_vbox.get_node(@"Pause")
+onready var move_mode = modes_vbox.get_node("Move")
+onready var color_mode = modes_vbox.get_node("Color")
+onready var scale_mode = modes_vbox.get_node("Scale")
+onready var rotate_mode = modes_vbox.get_node("Rotate")
+onready var callback_mode = modes_vbox.get_node("Callback")
+onready var follow_mode = modes_vbox.get_node("Follow")
+onready var repeat_mode = modes_vbox.get_node("Repeat")
+onready var paused_mode = modes_vbox.get_node("Pause")
 
 func _ready():
 	for index in range(trans_list.size()):
@@ -44,7 +44,7 @@ func _ready():
 
 	for node in [trans_vbox, eases_vbox, modes_vbox]:
 		node.get_child(1).set_pressed(true)
-	modes_vbox.get_node(@"Repeat").set_pressed(true)
+	modes_vbox.get_node("Repeat").set_pressed(true)
 
 	reset_tween()
 

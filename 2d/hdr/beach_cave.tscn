@@ -4,7 +4,7 @@
 [ext_resource path="res://ocean_beach.png" type="Texture" id=2]
 [ext_resource path="res://ocean_cave.png" type="Texture" id=3]
 
-[sub_resource type="Environment" id=1]
+[sub_resource type="Environment3D" id=1]
 background_mode = 4
 ambient_light_sky_contribution = 0.0
 auto_exposure_enabled = true
@@ -36,12 +36,11 @@ scale = Vector2( 1.2, 1 )
 texture = ExtResource( 3 )
 centered = false
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment3D" type="WorldEnvironment3D" parent="."]
 environment = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2( 540, 360 )
-current = true
 
 [node name="Label" type="Label" parent="."]
 margin_left = 10.0

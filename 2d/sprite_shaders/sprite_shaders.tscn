@@ -125,4 +125,3 @@ texture = ExtResource( 2 )
 region_rect = Rect2( 141, 115, 39, 6 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
-current = true

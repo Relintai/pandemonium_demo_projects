@@ -10,28 +10,28 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "RigidBody2D",
-"class": "Bullet",
-"language": "GDScript",
+"class": @"Bullet",
+"language": @"GDScript",
 "path": "res://player/bullet.gd"
 }, {
 "base": "Area2D",
-"class": "Coin",
-"language": "GDScript",
+"class": @"Coin",
+"language": @"GDScript",
 "path": "res://coin/coin.gd"
 }, {
 "base": "RigidBody2D",
-"class": "Enemy",
-"language": "GDScript",
+"class": @"Enemy",
+"language": @"GDScript",
 "path": "res://enemy/enemy.gd"
 }, {
 "base": "Node2D",
-"class": "MovingPlatform",
-"language": "GDScript",
+"class": @"MovingPlatform",
+"language": @"GDScript",
 "path": "res://platform/moving_platform.gd"
 }, {
 "base": "RigidBody2D",
-"class": "Player",
-"language": "GDScript",
+"class": @"Player",
+"language": @"GDScript",
 "path": "res://player/player.gd"
 } ]
 _global_script_class_icons={
@@ -154,7 +154,6 @@ mipmap_policy=1
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
 quality/intended_usage/framebuffer_allocation=0
 quality/intended_usage/framebuffer_allocation.mobile=1
 2d/snapping/use_gpu_pixel_snap=true

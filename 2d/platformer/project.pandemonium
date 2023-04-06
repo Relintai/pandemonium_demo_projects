@@ -10,33 +10,33 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "KinematicBody2D",
-"class": "Actor",
-"language": "GDScript",
+"class": @"Actor",
+"language": @"GDScript",
 "path": "res://src/Actors/Actor.gd"
 }, {
 "base": "RigidBody2D",
-"class": "Bullet",
-"language": "GDScript",
+"class": @"Bullet",
+"language": @"GDScript",
 "path": "res://src/Objects/Bullet.gd"
 }, {
 "base": "Area2D",
-"class": "Coin",
-"language": "GDScript",
+"class": @"Coin",
+"language": @"GDScript",
 "path": "res://src/Objects/Coin.gd"
 }, {
 "base": "Actor",
-"class": "Enemy",
-"language": "GDScript",
+"class": @"Enemy",
+"language": @"GDScript",
 "path": "res://src/Actors/Enemy.gd"
 }, {
 "base": "Position2D",
-"class": "Gun",
-"language": "GDScript",
+"class": @"Gun",
+"language": @"GDScript",
 "path": "res://src/Actors/Gun.gd"
 }, {
 "base": "Actor",
-"class": "Player",
-"language": "GDScript",
+"class": @"Player",
+"language": @"GDScript",
 "path": "res://src/Actors/Player.gd"
 } ]
 _global_script_class_icons={
@@ -240,7 +240,6 @@ mipmap_policy=1
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
 quality/intended_usage/framebuffer_allocation=0
 quality/intended_usage/framebuffer_allocation.mobile=1
 2d/snapping/use_gpu_pixel_snap=true

@@ -1,14 +1,14 @@
 extends Panel
 
 onready var brush_settings = $BrushSettings
-onready var label_brush_size = brush_settings.get_node(@"LabelBrushSize")
-onready var label_brush_shape = brush_settings.get_node(@"LabelBrushShape")
+onready var label_brush_size = brush_settings.get_node("LabelBrushSize")
+onready var label_brush_shape = brush_settings.get_node("LabelBrushShape")
 onready var label_stats = $LabelStats
 onready var label_tools = $LabelTools
 
 onready var _parent = get_parent()
-onready var save_dialog = _parent.get_node(@"SaveFileDialog")
-onready var paint_control = _parent.get_node(@"PaintControl")
+onready var save_dialog = _parent.get_node("SaveFileDialog")
+onready var paint_control = _parent.get_node("PaintControl")
 
 func _ready():
 	# warning-ignore-all:return_value_discarded

@@ -320,4 +320,3 @@ anims/motion3 = SubResource( 7 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2( 400, 300 )
-current = true

@@ -13,5 +13,8 @@ func _physics_process(delta):
 	var d = sin(accum)
 	var xf = Transform2D()
 
-	xf[2]= motion * d
+	#xf[2] = motion * d
+	
+	xf.origin = motion * d
+	
 	($Platform as RigidBody2D).transform = xf

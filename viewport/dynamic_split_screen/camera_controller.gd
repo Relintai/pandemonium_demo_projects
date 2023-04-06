@@ -29,8 +29,8 @@ onready var player2 = $"../Player2"
 onready var view = $View
 onready var viewport1 = $Viewport1
 onready var viewport2 = $Viewport2
-onready var camera1 = viewport1.get_node(@"Camera1")
-onready var camera2 = viewport2.get_node(@"Camera2")
+onready var camera1 = viewport1.get_node("Camera1")
+onready var camera2 = viewport2.get_node("Camera2")
 
 
 func _ready():

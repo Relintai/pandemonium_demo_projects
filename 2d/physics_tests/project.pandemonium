@@ -10,18 +10,18 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "MenuButton",
-"class": "OptionMenu",
-"language": "GDScript",
+"class": @"OptionMenu",
+"language": @"GDScript",
 "path": "res://utils/option_menu.gd"
 }, {
 "base": "Node2D",
-"class": "Test",
-"language": "GDScript",
+"class": @"Test",
+"language": @"GDScript",
 "path": "res://test.gd"
 }, {
 "base": "Test",
-"class": "TestCharacter",
-"language": "GDScript",
+"class": @"TestCharacter",
+"language": @"GDScript",
 "path": "res://tests/functional/test_character.gd"
 } ]
 _global_script_class_icons={
@@ -46,10 +46,6 @@ config/icon="res://icon.png"
 
 Log="*res://utils/system_log.gd"
 System="*res://utils/system.gd"
-
-[debug]
-
-gdscript/warnings/return_value_discarded=false
 
 [display]
 
@@ -125,7 +121,6 @@ limits/message_queue/max_size_kb=10240
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
 environment/default_clear_color=Color( 0.184314, 0.184314, 0.184314, 1 )

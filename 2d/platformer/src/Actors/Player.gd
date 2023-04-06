@@ -14,7 +14,7 @@ onready var animation_player = $AnimationPlayer
 onready var shoot_timer = $ShootAnimation
 onready var sprite = $Sprite
 onready var sound_jump = $Jump
-onready var gun = sprite.get_node(@"Gun")
+onready var gun = sprite.get_node("Gun")
 
 
 func _ready():

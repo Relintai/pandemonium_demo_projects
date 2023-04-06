@@ -21,8 +21,8 @@ margin_bottom = -730.0
 rect_clip_content = false
 mouse_filter = 2
 size_flags_vertical = 4
-custom_fonts/bold_font = ExtResource( 5 )
 custom_fonts/normal_font = ExtResource( 2 )
+custom_fonts/bold_font = ExtResource( 5 )
 bbcode_enabled = true
 bbcode_text = "This example shows how to apply the State programming pattern in GDScript, including Hierarchical States, and a pushdown automaton.
 

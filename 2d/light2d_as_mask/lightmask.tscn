@@ -84,4 +84,3 @@ anims/maskmotion = SubResource( 2 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2( 512, 300 )
-current = true

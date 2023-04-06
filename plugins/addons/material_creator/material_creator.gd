@@ -12,7 +12,7 @@ func _ready():
 	get_node("VBoxContainer/LoadButton").connect("pressed", self, "load_pressed")
 	get_node("SaveMaterialDialog").connect("file_selected", self, "save_file_selected")
 	get_node("LoadMaterialDialog").connect("file_selected", self, "load_file_selected")
-	VisualServer.canvas_item_set_clip(get_canvas_item(), true)
+	RenderingServer.canvas_item_set_clip(get_canvas_item(), true)
 
 
 func save_pressed():

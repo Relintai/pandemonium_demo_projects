@@ -110,8 +110,8 @@ func _ready():
 	add_line("Model name", OS.get_model_name())
 	add_line("Processor count", OS.get_processor_count())
 	add_line("Device unique ID", OS.get_unique_id())
-	add_line("Video adapter name", VisualServer.get_video_adapter_name())
-	add_line("Video adapter vendor", VisualServer.get_video_adapter_vendor())
+	add_line("Video adapter name", RenderingServer.get_video_adapter_name())
+	add_line("Video adapter vendor", RenderingServer.get_video_adapter_vendor())
 
 	add_header("Input")
 	add_line("Latin keyboard variant", OS.get_latin_keyboard_variant())

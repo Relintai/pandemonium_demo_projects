@@ -50,7 +50,7 @@ var Enemy = preload("res://enemy/Enemy.tscn")
 onready var sound_jump = $SoundJump
 onready var sound_shoot = $SoundShoot
 onready var sprite = $Sprite
-onready var sprite_smoke = sprite.get_node(@"Smoke")
+onready var sprite_smoke = sprite.get_node("Smoke")
 onready var animation_player = $AnimationPlayer
 onready var bullet_shoot = $BulletShoot
 

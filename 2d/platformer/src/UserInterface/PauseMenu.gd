@@ -7,7 +7,7 @@ export(float) var fade_in_duration = 0.3
 export(float) var fade_out_duration = 0.2
 
 onready var center_cont = $ColorRect/CenterContainer
-onready var resume_button = center_cont.get_node(@"VBoxContainer/ResumeButton")
+onready var resume_button = center_cont.get_node("VBoxContainer/ResumeButton")
 
 onready var root = get_tree().get_root()
 onready var scene_root = root.get_child(root.get_child_count() - 1)

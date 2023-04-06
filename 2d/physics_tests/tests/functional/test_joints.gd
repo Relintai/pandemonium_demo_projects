@@ -31,7 +31,7 @@ func _ready():
 	for joint_index in range(joints.get_child_count()):
 		var joint_node = joints.get_child(joint_index)
 		joint_node.visible = false
-		var joint_name = joint_node.name
+		var joint_name = str(joint_node.name)
 		var joint_short = joint_name.substr(0, joint_name.length() - 7)
 		var option_name = OPTION_JOINT_TYPE % [joint_short, joint_index + 1]
 		options.add_menu_item(option_name)
