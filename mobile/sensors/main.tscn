@@ -3,7 +3,7 @@
 [ext_resource path="res://main.gd" type="Script" id=1]
 [ext_resource path="res://cube_6.png" type="Texture" id=2]
 
-[sub_resource type="Environment" id=1]
+[sub_resource type="Environment3D" id=1]
 background_mode = 1
 ambient_light_color = Color( 0.648438, 0.64578, 0.64578, 1 )
 

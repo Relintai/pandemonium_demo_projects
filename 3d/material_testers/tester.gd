@@ -13,11 +13,11 @@ var zoom = 5
 var base_height = ProjectSettings.get_setting("display/window/size/height")
 
 var backgrounds = [
-	{ path = "res://backgrounds/schelde.hdr", name = "Riverside"},
-	{ path = "res://backgrounds/lobby.hdr", name = "Lobby"},
-	{ path = "res://backgrounds/park.hdr", name = "Park"},
-	{ path = "res://backgrounds/night.hdr", name = "Night"},
-	{ path = "res://backgrounds/experiment.hdr", name = "Experiment"},
+	{ "path": "res://backgrounds/schelde.hdr", "name": "Riverside"},
+	{ "path": "res://backgrounds/lobby.hdr", "name": "Lobby"},
+	{ "path": "res://backgrounds/park.hdr", "name": "Park"},
+	{ "path": "res://backgrounds/night.hdr", "name": "Night"},
+	{ "path": "res://backgrounds/experiment.hdr", "name": "Experiment"},
 ]
 
 onready var testers = $Testers

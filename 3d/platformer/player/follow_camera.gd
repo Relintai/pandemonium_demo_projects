@@ -43,7 +43,7 @@ func _physics_process(dt):
 	delta.y = clamp(delta.y, MIN_HEIGHT, MAX_HEIGHT)
 
 	# Check autoturn.
-	var ds = PhysicsServer.space_get_direct_state(get_world().get_space())
+	var ds = PhysicsServer.space_get_direct_state(get_world_3d().get_space())
 
 	var col_left = ds.intersect_ray(target, target + Basis(Vector3.UP, deg2rad(autoturn_ray_aperture)).xform(delta), collision_exception)
 	var col = ds.intersect_ray(target, target + delta, collision_exception)

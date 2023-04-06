@@ -34,7 +34,7 @@ func _integrate_forces(state):
 
 
 func ground_check():
-	var space_state = get_world().direct_space_state
+	var space_state = get_world_3d().direct_space_state
 	var shape = PhysicsShapeQueryParameters.new()
 	shape.transform = _collision_shape.global_transform
 	shape.shape_rid = _collision_shape.shape.get_rid()

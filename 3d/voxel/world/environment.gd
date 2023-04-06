@@ -1,4 +1,4 @@
-extends WorldEnvironment
+extends WorldEnvironment3D
 # This script controls fog based on the VoxelWorld's effective render distance.
 
 onready var voxel_world = $"../VoxelWorld"

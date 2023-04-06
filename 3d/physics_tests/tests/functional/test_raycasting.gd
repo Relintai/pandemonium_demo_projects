@@ -35,7 +35,7 @@ func _physics_process(_delta):
 
 	for shape in $Shapes.get_children():
 		var body = shape as PhysicsBody
-		var space_state = body.get_world().direct_space_state
+		var space_state = body.get_world_3d().direct_space_state
 
 		Log.print_log("* Testing: %s" % body.name)
 

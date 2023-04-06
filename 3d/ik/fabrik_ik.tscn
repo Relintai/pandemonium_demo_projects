@@ -1,9 +1,7 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://addons/sade/editor_gizmo_texture.png" type="Texture" id=1]
-[ext_resource path="res://model/godot_battle_bot.dae" type="PackedScene" id=2]
-[ext_resource path="res://model/battle_bot_color.tres" type="Material" id=3]
-[ext_resource path="res://model/battle_bot_emission.tres" type="Material" id=4]
+[ext_resource path="res://model/godot_battle_bot.gltf" type="PackedScene" id=2]
 [ext_resource path="res://target_from_mousepos.gd" type="Script" id=5]
 [ext_resource path="res://addons/sade/ik_look_at.gd" type="Script" id=6]
 [ext_resource path="res://addons/sade/ik_look_at.png" type="Texture" id=7]
@@ -19,6 +17,7 @@ albedo_texture = ExtResource( 1 )
 roughness = 0.2
 uv1_scale = Vector3( 0.25, 0.25, 0.25 )
 uv1_triplanar = true
+uv1_triplanar_sharpness = 1.0
 
 [sub_resource type="CubeMesh" id=3]
 size = Vector3( 1, 1, 1 )
@@ -38,10 +37,6 @@ transform = Transform( 0.56827, 0.673454, -0.472789, 0, 0.574581, 0.818448, 0.82
 
 [node name="GodotBattleBot" parent="." instance=ExtResource( 2 )]
 
-[node name="godot_battle_bot" parent="GodotBattleBot/Armature/Skeleton" index="0"]
-material/0 = ExtResource( 3 )
-material/1 = ExtResource( 4 )
-
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.5, 11 )
 fov = 74.0
@@ -57,16 +52,17 @@ script = ExtResource( 6 )
 __meta__ = {
 "_editor_icon": ExtResource( 7 )
 }
-skeleton_path = NodePath("../../../GodotBattleBot/Armature/Skeleton")
+skeleton_path = NodePath("../../../GodotBattleBot/Z_UP/Armature/Skeleton")
 bone_name = "Head"
 additional_rotation = Vector3( 90, 0, 0 )
+additional_bone_length = 1
 
 [node name="IK_FABRIK_Left_Arm" type="Spatial" parent="Camera/Targets"]
 script = ExtResource( 8 )
 __meta__ = {
 "_editor_icon": ExtResource( 9 )
 }
-skeleton_path = NodePath("../../../GodotBattleBot/Armature/Skeleton")
+skeleton_path = NodePath("../../../GodotBattleBot/Z_UP/Armature/Skeleton")
 bones_in_chain = PoolStringArray( "Left_UpperArm", "Left_LowerArm" )
 bones_in_chain_lengths = PoolRealArray( 1.97, 3 )
 chain_iterations = 10
@@ -82,7 +78,7 @@ script = ExtResource( 6 )
 __meta__ = {
 "_editor_icon": ExtResource( 7 )
 }
-skeleton_path = NodePath("../../../../../GodotBattleBot/Armature/Skeleton")
+skeleton_path = NodePath("../../../../../GodotBattleBot/Z_UP/Armature/Skeleton")
 bone_name = "Left_Hand"
 additional_rotation = Vector3( 0, 0, 90 )
 position_using_additional_bone = true
@@ -103,9 +99,10 @@ script = ExtResource( 8 )
 __meta__ = {
 "_editor_icon": ExtResource( 9 )
 }
-skeleton_path = NodePath("../../../GodotBattleBot/Armature/Skeleton")
+skeleton_path = NodePath("../../../GodotBattleBot/Z_UP/Armature/Skeleton")
 bones_in_chain = PoolStringArray( "Right_UpperArm", "Right_LowerArm", "Right_Hand" )
 bones_in_chain_lengths = PoolRealArray( 1.97, 3, 1.2 )
+chain_iterations = 10
 limit_chain_iterations = false
 use_middle_joint_target = true
 
@@ -118,9 +115,10 @@ script = ExtResource( 6 )
 __meta__ = {
 "_editor_icon": ExtResource( 7 )
 }
-skeleton_path = NodePath("../../../../../GodotBattleBot/Armature/Skeleton")
+skeleton_path = NodePath("../../../../../GodotBattleBot/Z_UP/Armature/Skeleton")
 bone_name = "Right_Hand"
 additional_rotation = Vector3( 0, 0, 90 )
+additional_bone_length = 1
 
 [node name="MiddleJoint" type="Spatial" parent="Camera/Targets/IK_FABRIK_Right_Arm"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6.34515, 0, -3.7843 )

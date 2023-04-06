@@ -1,6 +1,6 @@
 [gd_scene load_steps=58 format=2]
 
-[ext_resource path="res://default_env.tres" type="Environment" id=1]
+[ext_resource path="res://default_env.tres" type="Environment3D" id=1]
 [ext_resource path="res://camera_controller.gd" type="Script" id=2]
 [ext_resource path="res://split_screen.shader" type="Shader" id=3]
 [ext_resource path="res://icon.png" type="Texture" id=4]

@@ -10,13 +10,13 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "StaticBody",
-"class": "Chunk",
-"language": "GDScript",
+"class": @"Chunk",
+"language": @"GDScript",
 "path": "res://world/chunk.gd"
 }, {
 "base": "Resource",
-"class": "TerrainGenerator",
-"language": "GDScript",
+"class": @"TerrainGenerator",
+"language": @"GDScript",
 "path": "res://world/terrain_generator.gd"
 } ]
 _global_script_class_icons={
@@ -156,12 +156,11 @@ pick_block={
 
 [physics]
 
-common/physics_fps=120
 3d/physics_engine="Bullet"
+common/physics_fps=120
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
 quality/filters/anisotropic_filter_level=16

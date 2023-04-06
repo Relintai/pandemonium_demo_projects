@@ -46,61 +46,24 @@ func set_gi_mode(p_gi_mode):
 			$ZdmBakeIndirect.visible = false
 			$ZdmBakeAll.visible = false
 			$ZdmNoBake.visible = true
-			$BakedLightmapIndirect.visible = false
-			$BakedLightmapAll.visible = false
-			$GIProbe.visible = false
-
-			# There is no difference between Indirect and Disabled when no GI is used.
-			# Pick the default value (which is Indirect).
-			$Sun.light_bake_mode = Light.BAKE_INDIRECT
-			$GrateOmniLight.light_bake_mode = Light.BAKE_INDIRECT
-			$GarageOmniLight.light_bake_mode = Light.BAKE_INDIRECT
-			$CornerSpotLight.light_bake_mode = Light.BAKE_INDIRECT
 
 		GIMode.BAKED_LIGHTMAP_ALL:
 			$ZdmBakeIndirect.visible = false
 			$ZdmBakeAll.visible = true
 			$ZdmNoBake.visible = false
-			$BakedLightmapIndirect.visible = false
-			$BakedLightmapAll.visible = true
-			$GIProbe.visible = false
 
-			# Make lights not affect baked surfaces by setting their bake mode to All.
-			$Sun.light_bake_mode = Light.BAKE_ALL
-			$GrateOmniLight.light_bake_mode = Light.BAKE_ALL
-			$GarageOmniLight.light_bake_mode = Light.BAKE_ALL
-			$CornerSpotLight.light_bake_mode = Light.BAKE_ALL
 
 		GIMode.BAKED_LIGHTMAP_INDIRECT:
 			$ZdmBakeIndirect.visible = true
 			$ZdmBakeAll.visible = false
 			$ZdmNoBake.visible = false
-			$BakedLightmapIndirect.visible = true
-			$BakedLightmapAll.visible = false
-			$GIProbe.visible = false
 
-			$Sun.light_bake_mode = Light.BAKE_INDIRECT
-			$GrateOmniLight.light_bake_mode = Light.BAKE_INDIRECT
-			$GarageOmniLight.light_bake_mode = Light.BAKE_INDIRECT
-			$CornerSpotLight.light_bake_mode = Light.BAKE_INDIRECT
 
 		GIMode.GI_PROBE:
 			$ZdmBakeIndirect.visible = false
 			$ZdmBakeAll.visible = false
 			$ZdmNoBake.visible = true
-			$BakedLightmapIndirect.visible = false
-			$BakedLightmapAll.visible = false
-			$GIProbe.visible = true
 
-			# Bake mode must be Indirect, not Disabled. Otherwise, GI will
-			# not be visible for those lights.
-			# Moving/blinking lights should generally have their bake mode set to Disabled
-			# to avoid visible GI pop-ins. This is because GIProbe
-			# can take a while to update.
-			$Sun.light_bake_mode = Light.BAKE_INDIRECT
-			$GrateOmniLight.light_bake_mode = Light.BAKE_INDIRECT
-			$GarageOmniLight.light_bake_mode = Light.BAKE_INDIRECT
-			$CornerSpotLight.light_bake_mode = Light.BAKE_INDIRECT
 
 
 func set_use_reflection_probe(p_visible):
