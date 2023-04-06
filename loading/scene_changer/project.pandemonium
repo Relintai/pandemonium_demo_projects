@@ -14,10 +14,6 @@ config/name="Scene Changer"
 config/description="This uses functions in SceneTree to switch between two scenes."
 run/main_scene="res://scene_a.tscn"
 
-[debug]
-
-gdscript/warnings/return_value_discarded=false
-
 [display]
 
 window/dpi/allow_hidpi=true
@@ -30,6 +26,5 @@ singletons=[  ]
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false

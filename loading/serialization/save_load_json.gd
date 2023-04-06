@@ -20,16 +20,16 @@ func save_game():
 	# JSON doesn't support complex types such as Vector2.
 	# `var2str()` can be used to convert any Variant to a String.
 	var save_dict = {
-		player = {
-			position = var2str(player.position),
-			health = var2str(player.health),
+		"player": {
+			"position": var2str(player.position),
+			"health": var2str(player.health),
 		},
-		enemies = []
+		"enemies": []
 	}
 
 	for enemy in get_tree().get_nodes_in_group("enemy"):
 		save_dict.enemies.push_back({
-			position = var2str(enemy.position),
+			"position": var2str(enemy.position),
 		})
 
 	file.store_line(to_json(save_dict))

@@ -10,15 +10,15 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 32, 32 )
 
-[sub_resource type="StyleBoxFlat" id=2]
-bg_color = Color( 0.45098, 1, 0.152941, 1 )
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0, 0, 0, 0.25098 )
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
-[sub_resource type="StyleBoxFlat" id=3]
-bg_color = Color( 0, 0, 0, 0.25098 )
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.45098, 1, 0.152941, 1 )
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -44,8 +44,8 @@ margin_left = -32.0
 margin_top = -40.0
 margin_right = 32.0
 margin_bottom = -34.0
-custom_styles/fg = SubResource( 2 )
 custom_styles/bg = SubResource( 3 )
+custom_styles/fg = SubResource( 2 )
 value = 100.0
 percent_visible = false
 __meta__ = {
@@ -84,12 +84,12 @@ __meta__ = {
 [node name="SaveLoad" type="GridContainer" parent="Control/VBoxContainer"]
 margin_right = 269.0
 margin_bottom = 78.0
-custom_constants/vseparation = 8
 custom_constants/hseparation = 8
+custom_constants/vseparation = 8
 columns = 2
 
 [node name="SaveConfigFile" type="Button" parent="Control/VBoxContainer/SaveLoad"]
-margin_right = 130.0
+margin_right = 131.0
 margin_bottom = 35.0
 rect_min_size = Vector2( 0, 35 )
 size_flags_horizontal = 3
@@ -99,8 +99,8 @@ game_node = NodePath("../../../../Game")
 player_node = NodePath("../../../../Game/Player")
 
 [node name="LoadConfigFile" type="Button" parent="Control/VBoxContainer/SaveLoad"]
-margin_left = 138.0
-margin_right = 268.0
+margin_left = 139.0
+margin_right = 269.0
 margin_bottom = 35.0
 rect_min_size = Vector2( 0, 35 )
 size_flags_horizontal = 3
@@ -111,7 +111,7 @@ player_node = NodePath("../../../../Game/Player")
 
 [node name="SaveJSON" type="Button" parent="Control/VBoxContainer/SaveLoad"]
 margin_top = 43.0
-margin_right = 130.0
+margin_right = 131.0
 margin_bottom = 78.0
 rect_min_size = Vector2( 0, 35 )
 size_flags_horizontal = 3
@@ -121,9 +121,9 @@ game_node = NodePath("../../../../Game")
 player_node = NodePath("../../../../Game/Player")
 
 [node name="LoadJSON" type="Button" parent="Control/VBoxContainer/SaveLoad"]
-margin_left = 138.0
+margin_left = 139.0
 margin_top = 43.0
-margin_right = 268.0
+margin_right = 269.0
 margin_bottom = 78.0
 rect_min_size = Vector2( 0, 35 )
 size_flags_horizontal = 3
