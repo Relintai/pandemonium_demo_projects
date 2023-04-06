@@ -16,10 +16,6 @@ split screen, also called Voronoi split screen, using GDSL."
 run/main_scene="res://split_screen.tscn"
 config/icon="res://icon.png"
 
-[debug]
-
-gdscript/warnings/return_value_discarded=false
-
 [input]
 
 move_up_player1={
@@ -83,7 +79,6 @@ move_right_player2={
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
 quality/intended_usage/framebuffer_allocation=3
 vram_compression/import_etc=true
 vram_compression/import_etc2=false

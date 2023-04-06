@@ -15,10 +15,6 @@ config/description="An example showing how to take screenshots of the screen."
 run/main_scene="res://screen_capture.tscn"
 config/icon="res://icon.png"
 
-[debug]
-
-gdscript/warnings/return_value_discarded=false
-
 [display]
 
 window/dpi/allow_hidpi=true
@@ -31,6 +27,5 @@ singletons=[  ]
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false

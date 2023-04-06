@@ -128,7 +128,7 @@ func find_mouse(global_position):
 
 
 	# Manually raycasts the are to find the mouse position
-	var result = get_world().direct_space_state.intersect_ray(from, to, [], node_area.collision_layer,false,true) #for 3.1 changes
+	var result = get_world_3d().direct_space_state.intersect_ray(from, to, [], node_area.collision_layer,false,true) #for 3.1 changes
 
 	if result.size() > 0:
 		return result.position
