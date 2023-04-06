@@ -38,4 +38,4 @@ func get_plugin_name():
 
 func get_plugin_icon():
 	# Must return some kind of Texture for the icon.
-	return get_editor_interface().get_base_control().get_icon("Node", "EditorIcons")
+	return get_editor_interface().get_base_control().get_theme_icon("Node", "EditorIcons")
