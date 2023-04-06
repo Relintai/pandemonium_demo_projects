@@ -22,7 +22,7 @@ __meta__ = {
 [node name="AudioStreamRecord" type="AudioStreamPlayer" parent="."]
 stream = SubResource( 1 )
 autoplay = true
-bus = "Record"
+bus = @"Record"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 autoplay = true
