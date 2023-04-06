@@ -25,9 +25,11 @@ func _ready():
 		player2.set_network_master(get_tree().get_network_unique_id())
 
 	print("Unique id: ", get_tree().get_network_unique_id())
+		
+	rpc_config("update_score", MultiplayerAPI.RPC_MODE_REMOTESYNC)
 
 
-remotesync func update_score(add_to_left):
+func update_score(add_to_left):
 	if add_to_left:
 		score_left += 1
 		score_left_node.set_text(str(score_left))

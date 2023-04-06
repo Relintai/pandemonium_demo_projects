@@ -2,13 +2,13 @@ extends KinematicBody2D
 
 const MOTION_SPEED = 90.0
 
-puppet var puppet_pos = Vector2()
-puppet var puppet_motion = Vector2()
+var puppet_pos = Vector2()
+var puppet_motion = Vector2()
 
 export var stunned = false
 
 # Use sync because it will be called everywhere
-remotesync func setup_bomb(bomb_name, pos, by_who):
+func setup_bomb(bomb_name, pos, by_who):
 	var bomb = preload("res://bomb.tscn").instance()
 	bomb.set_name(bomb_name) # Ensure unique name for the bomb
 	bomb.position = pos
@@ -47,8 +47,8 @@ func _physics_process(_delta):
 
 		prev_bombing = bombing
 
-		rset("puppet_motion", motion)
-		rset("puppet_pos", position)
+		rpc("set_puppet_motion", motion)
+		rpc("set_puppet_pos", position)
 	else:
 		position = puppet_pos
 		motion = puppet_motion
@@ -76,11 +76,11 @@ func _physics_process(_delta):
 		puppet_pos = position # To avoid jitter
 
 
-puppet func stun():
+func stun():
 	stunned = true
 
 
-master func exploded(_by_who):
+func exploded(_by_who):
 	if stunned:
 		return
 	rpc("stun") # Stun puppets
@@ -91,6 +91,18 @@ func set_player_name(new_name):
 	get_node("label").set_text(new_name)
 
 
+func set_puppet_pos(pos):
+	puppet_pos = pos
+
+func set_puppet_motion(pos):
+	puppet_motion = pos
+
 func _ready():
 	stunned = false
 	puppet_pos = position
+	
+	rpc_config("set_puppet_pos", MultiplayerAPI.RPC_MODE_PUPPET)
+	rpc_config("set_puppet_motion", MultiplayerAPI.RPC_MODE_PUPPET)
+	rpc_config("setup_bomb", MultiplayerAPI.RPC_MODE_REMOTESYNC)
+	rpc_config("stun", MultiplayerAPI.RPC_MODE_PUPPET)
+	rpc_config("exploded", MultiplayerAPI.RPC_MODE_MASTER)

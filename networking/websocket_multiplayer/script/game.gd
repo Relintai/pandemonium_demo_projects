@@ -8,18 +8,18 @@ onready var _action = $HBoxContainer/VBoxContainer/Action
 var _players = []
 var _turn = -1
 
-master func set_player_name(name):
+func set_player_name(name):
 	var sender = get_tree().get_rpc_sender_id()
 	rpc("update_player_name", sender, name)
 
 
-remotesync func update_player_name(player, name):
+func update_player_name(player, name):
 	var pos = _players.find(player)
 	if pos != -1:
 		_list.set_item_text(pos, name)
 
 
-master func request_action(action):
+func request_action(action):
 	var sender = get_tree().get_rpc_sender_id()
 	if _players[_turn] != get_tree().get_rpc_sender_id():
 		rpc("_log", "Someone is trying to cheat! %s" % str(sender))
@@ -28,13 +28,13 @@ master func request_action(action):
 	next_turn()
 
 
-remotesync func do_action(action):
+func do_action(action):
 	var name = _list.get_item_text(_turn)
 	var val = randi() % 100
 	rpc("_log", "%s: %ss %d" % [name, action, val])
 
 
-remotesync func set_turn(turn):
+func set_turn(turn):
 	_turn = turn
 	if turn >= _players.size():
 		return
@@ -46,7 +46,7 @@ remotesync func set_turn(turn):
 	_action.disabled = _players[turn] != get_tree().get_network_unique_id()
 
 
-remotesync func del_player(id):
+func del_player(id):
 	var pos = _players.find(id)
 	if pos == -1:
 		return
@@ -58,7 +58,7 @@ remotesync func del_player(id):
 		rpc("set_turn", _turn)
 
 
-remotesync func add_player(id, name=""):
+func add_player(id, name=""):
 	_players.append(id)
 	if name == "":
 		_list.add_item("... connecting ...", null, false)
@@ -106,7 +106,7 @@ func on_peer_del(id):
 	rpc("del_player", id)
 
 
-remotesync func _log(what):
+func _log(what):
 	$HBoxContainer/RichTextLabel.add_text(what + "\n")
 
 
@@ -116,3 +116,15 @@ func _on_Action_pressed():
 		next_turn()
 	else:
 		rpc_id(1, "request_action", "roll")
+		
+		
+
+func _ready():
+	rpc_config("set_player_name", MultiplayerAPI.RPC_MODE_MASTER)
+	rpc_config("update_player_name", MultiplayerAPI.RPC_MODE_REMOTESYNC)
+	rpc_config("request_action", MultiplayerAPI.RPC_MODE_MASTER)
+	rpc_config("do_action", MultiplayerAPI.RPC_MODE_REMOTESYNC)
+	rpc_config("set_turn", MultiplayerAPI.RPC_MODE_REMOTESYNC)
+	rpc_config("del_player", MultiplayerAPI.RPC_MODE_REMOTESYNC)
+	rpc_config("add_player", MultiplayerAPI.RPC_MODE_REMOTESYNC)
+	rpc_config("_log", MultiplayerAPI.RPC_MODE_REMOTESYNC)

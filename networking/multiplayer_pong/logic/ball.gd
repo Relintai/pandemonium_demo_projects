@@ -41,7 +41,7 @@ func _process(delta):
 			rpc("_reset_ball", true)
 
 
-remotesync func bounce(left, random):
+func bounce(left, random):
 	# Using sync because both players can make it bounce.
 	if left:
 		direction.x = abs(direction.x)
@@ -53,14 +53,20 @@ remotesync func bounce(left, random):
 	direction = direction.normalized()
 
 
-remotesync func stop():
+func stop():
 	stopped = true
 
 
-remotesync func _reset_ball(for_left):
+func _reset_ball(for_left):
 	position = _screen_size / 2
 	if for_left:
 		direction = Vector2.LEFT
 	else:
 		direction = Vector2.RIGHT
 	_speed = DEFAULT_SPEED
+
+
+func _ready():
+	rpc_config("bounce", MultiplayerAPI.RPC_MODE_REMOTESYNC)
+	rpc_config("stop", MultiplayerAPI.RPC_MODE_REMOTESYNC)
+	rpc_config("_reset_ball", MultiplayerAPI.RPC_MODE_REMOTESYNC)

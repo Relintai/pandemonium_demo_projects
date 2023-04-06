@@ -61,7 +61,7 @@ func _connected_fail():
 
 # Lobby management functions.
 
-remote func register_player(new_player_name):
+func register_player(new_player_name):
 	var id = get_tree().get_rpc_sender_id()
 	print(id)
 	players[id] = new_player_name
@@ -73,7 +73,7 @@ func unregister_player(id):
 	emit_signal("player_list_changed")
 
 
-remote func pre_start_game(spawn_points):
+func pre_start_game(spawn_points):
 	# Change scene.
 	var world = load("res://world.tscn").instance()
 	get_tree().get_root().add_child(world)
@@ -111,11 +111,11 @@ remote func pre_start_game(spawn_points):
 		post_start_game()
 
 
-remote func post_start_game():
+func post_start_game():
 	get_tree().set_pause(false) # Unpause and unleash the game!
 
 
-remote func ready_to_start(id):
+func ready_to_start(id):
 	assert(get_tree().is_network_server())
 
 	if not id in players_ready:
@@ -181,3 +181,8 @@ func _ready():
 	get_tree().connect("connected_to_server", self, "_connected_ok")
 	get_tree().connect("connection_failed", self, "_connected_fail")
 	get_tree().connect("server_disconnected", self, "_server_disconnected")
+	
+	rpc_config("register_player", MultiplayerAPI.RPC_MODE_REMOTE)
+	rpc_config("pre_start_game", MultiplayerAPI.RPC_MODE_REMOTE)
+	rpc_config("post_start_game", MultiplayerAPI.RPC_MODE_REMOTE)
+	rpc_config("ready_to_start", MultiplayerAPI.RPC_MODE_REMOTE)

@@ -33,7 +33,7 @@ func _process(delta):
 
 
 # Synchronize position and speed to the other peers.
-puppet func set_pos_and_motion(pos, motion):
+func set_pos_and_motion(pos, motion):
 	position = pos
 	_motion = motion
 
@@ -47,3 +47,7 @@ func _on_paddle_area_enter(area):
 	if is_network_master():
 		# Random for new direction generated on each peer.
 		area.rpc("bounce", left, randf())
+
+
+func _ready():
+	rpc_config("set_pos_and_motion", MultiplayerAPI.RPC_MODE_PUPPET)

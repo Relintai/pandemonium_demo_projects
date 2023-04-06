@@ -16,7 +16,7 @@ func _process(_delta):
 		$"../Winner".show()
 
 
-remotesync func increase_score(for_who):
+func increase_score(for_who):
 	assert(for_who in player_labels)
 	var pl = player_labels[for_who]
 	pl.score += 1
@@ -31,15 +31,17 @@ func add_player(id, new_player_name):
 	var font = DynamicFont.new()
 	font.set_size(18)
 	font.set_font_data(preload("res://montserrat.otf"))
-	l.add_font_override("font", font)
+	l.add_theme_font_override("font", font)
 	add_child(l)
 
-	player_labels[id] = { name = new_player_name, label = l, score = 0 }
+	player_labels[id] = { "name": new_player_name, "label": l, "score": 0 }
 
 
 func _ready():
 	$"../Winner".hide()
 	set_process(true)
+	
+	rpc_config("increase_score", MultiplayerAPI.RPC_MODE_REMOTESYNC)
 
 
 func _on_exit_game_pressed():
