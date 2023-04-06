@@ -32,7 +32,6 @@ two_fingers_zoom = false
 
 [node name="Viewport" type="Viewport" parent="HBoxContainer/ViewportContainer"]
 size = Vector2( 510, 298 )
-own_world = true
 transparent_bg = true
 handle_input_locally = false
 msaa = 2
@@ -66,7 +65,6 @@ two_fingers_zoom = false
 
 [node name="Viewport" type="Viewport" parent="HBoxContainer/ViewportContainer2"]
 size = Vector2( 510, 298 )
-own_world = true
 transparent_bg = true
 handle_input_locally = false
 msaa = 2
@@ -105,7 +103,6 @@ two_fingers_zoom = false
 
 [node name="Viewport" type="Viewport" parent="HBoxContainer2/ViewportContainer"]
 size = Vector2( 510, 298 )
-own_world = true
 transparent_bg = true
 handle_input_locally = false
 msaa = 2
@@ -137,7 +134,6 @@ target = NodePath("Viewport/Spatial/MeshInstance")
 
 [node name="Viewport" type="Viewport" parent="HBoxContainer2/ViewportContainer2"]
 size = Vector2( 510, 298 )
-own_world = true
 transparent_bg = true
 handle_input_locally = false
 msaa = 2

@@ -25,5 +25,5 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5 )
 fov = 60.0
 near = 0.1
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment3D" parent="."]
 environment = ExtResource( 1 )

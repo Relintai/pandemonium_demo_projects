@@ -166,7 +166,7 @@ albedo_color = Color( 0.791675, 0.946163, 0.317723, 1 )
 
 [node name="World" type="Spatial"]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment3D" parent="."]
 environment = ExtResource( 1 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="WorldEnvironment"]
