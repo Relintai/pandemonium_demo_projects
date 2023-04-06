@@ -76,18 +76,18 @@ func _process(_delta):
 				joypad_buttons.get_child(JOY_ANALOG_R2).self_modulate.a = scaled_alpha_value
 
 		# Highlight axis labels that are within the "active" value range. Simular to the button highlighting for loop below.
-		axes.get_node("Axis" + str(axis) + "/Label").add_color_override("font_color", FONT_COLOR_DEFAULT)
+		axes.get_node("Axis" + str(axis) + "/Label").add_theme_color_override("font_color", FONT_COLOR_DEFAULT)
 		if abs(axis_value) >= DEADZONE:
-			axes.get_node("Axis" + str(axis) + "/Label").add_color_override("font_color", FONT_COLOR_ACTIVE)
+			axes.get_node("Axis" + str(axis) + "/Label").add_theme_color_override("font_color", FONT_COLOR_ACTIVE)
 
 	# Loop through the buttons and highlight the ones that are pressed.
 	for btn in range(JOY_BUTTON_0, int(min(JOY_BUTTON_MAX, 24))):
 		if Input.is_joy_button_pressed(joy_num, btn):
-			button_grid.get_child(btn).add_color_override("font_color", FONT_COLOR_ACTIVE)
+			button_grid.get_child(btn).add_theme_color_override("font_color", FONT_COLOR_ACTIVE)
 			if btn < 17 and btn != JOY_ANALOG_L2 and btn != JOY_ANALOG_R2:
 				joypad_buttons.get_child(btn).show()
 		else:
-			button_grid.get_child(btn).add_color_override("font_color", FONT_COLOR_DEFAULT)
+			button_grid.get_child(btn).add_theme_color_override("font_color", FONT_COLOR_DEFAULT)
 			if btn < 17 and btn != JOY_ANALOG_L2 and btn != JOY_ANALOG_R2:
 				joypad_buttons.get_child(btn).hide()
 

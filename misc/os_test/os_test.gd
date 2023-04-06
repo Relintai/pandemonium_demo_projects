@@ -16,26 +16,26 @@ func datetime_to_string(date):
 	):
 		# Date and time.
 		return "{year}-{month}-{day} {hour}:{minute}:{second}".format({
-			year = str(date.year).pad_zeros(2),
-			month = str(date.month).pad_zeros(2),
-			day = str(date.day).pad_zeros(2),
-			hour = str(date.hour).pad_zeros(2),
-			minute = str(date.minute).pad_zeros(2),
-			second = str(date.second).pad_zeros(2),
+			"year": str(date.year).pad_zeros(2),
+			"month": str(date.month).pad_zeros(2),
+			"day": str(date.day).pad_zeros(2),
+			"hour": str(date.hour).pad_zeros(2),
+			"minute": str(date.minute).pad_zeros(2),
+			"second": str(date.second).pad_zeros(2),
 		})
 	elif date.has("year") and date.has("month") and date.has("day"):
 		# Date only.
 		return "{year}-{month}-{day}".format({
-			year = str(date.year).pad_zeros(2),
-			month = str(date.month).pad_zeros(2),
-			day = str(date.day).pad_zeros(2),
+			"year": str(date.year).pad_zeros(2),
+			"month": str(date.month).pad_zeros(2),
+			"day": str(date.day).pad_zeros(2),
 		})
 	else:
 		# Time only.
 		return "{hour}:{minute}:{second}".format({
-			hour = str(date.hour).pad_zeros(2),
-			minute = str(date.minute).pad_zeros(2),
-			second = str(date.second).pad_zeros(2),
+			"hour": str(date.hour).pad_zeros(2),
+			"minute": str(date.minute).pad_zeros(2),
+			"second": str(date.second).pad_zeros(2),
 		})
 
 
@@ -54,8 +54,8 @@ func add_header(header):
 
 func add_line(key, value):
 	rtl.append_bbcode("[b]{key}:[/b] {value}\n".format({
-		key = key,
-		value = value if str(value) != "" else "[color=#8fff](empty)[/color]",
+		"key": key,
+		"value": value if str(value) != "" else "[color=#8fff](empty)[/color]",
 	}))
 
 

@@ -21,10 +21,6 @@ run/main_scene="res://os_test.tscn"
 run/low_processor_mode=true
 config/icon="res://icon.png"
 
-[debug]
-
-gdscript/warnings/return_value_discarded=false
-
 [display]
 
 window/dpi/allow_hidpi=true
@@ -33,6 +29,5 @@ window/stretch/aspect="expand"
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false

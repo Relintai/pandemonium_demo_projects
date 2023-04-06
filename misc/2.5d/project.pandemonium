@@ -10,23 +10,23 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Node2D",
-"class": "Node25D",
-"language": "GDScript",
+"class": @"Node25D",
+"language": @"GDScript",
 "path": "res://addons/node25d/node_25d.gd"
 }, {
 "base": "KinematicBody",
-"class": "PlayerMath25D",
-"language": "GDScript",
+"class": @"PlayerMath25D",
+"language": @"GDScript",
 "path": "res://assets/player/player_math_25d.gd"
 }, {
 "base": "KinematicBody",
-"class": "ShadowMath25D",
-"language": "GDScript",
+"class": @"ShadowMath25D",
+"language": @"GDScript",
 "path": "res://addons/node25d/shadow_math_25d.gd"
 }, {
 "base": "Node",
-"class": "YSort25D",
-"language": "GDScript",
+"class": @"YSort25D",
+"language": @"GDScript",
 "path": "res://addons/node25d/y_sort_25d.gd"
 } ]
 _global_script_class_icons={
@@ -52,7 +52,7 @@ window/size/height=900
 
 [editor_plugins]
 
-enabled=PoolStringArray( "node25d" )
+enabled=PoolStringArray( "res://addons/node25d/plugin.cfg" )
 
 [input]
 
@@ -195,6 +195,5 @@ exit={
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
