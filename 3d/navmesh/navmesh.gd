@@ -1,4 +1,4 @@
-extends Navigation
+extends Spatial
 
 const SPEED = 10.0
 
@@ -59,10 +59,10 @@ func _unhandled_input(event):
 	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed:
 		var from = camera.project_ray_origin(event.position)
 		var to = from + camera.project_ray_normal(event.position) * 1000
-		var target_point = get_closest_point_to_segment(from, to)
+		var target_point = NavigationServer.map_get_closest_point_to_segment(get_world_3d().navigation_map, from, to)
 
 		# Set the path between the robots current location and our target.
-		path = get_simple_path(robot.translation, target_point, true)
+		path = NavigationServer.map_get_path(get_world_3d().navigation_map, robot.translation, target_point, true)
 
 		if show_path:
 			draw_path(path)
