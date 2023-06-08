@@ -1,0 +1,74 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://navigation.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[sub_resource type="NavigationPolygon" id=1]
+vertices = PoolVector2Array( 194, -109, 123, 99, -49, 219, -142, -40, -83, -133 )
+polygons = [ PoolIntArray( 0, 1, 2, 3, 4 ) ]
+outlines = [ PoolVector2Array( -83, -133, 194, -109, 123, 99, -49, 219, -142, -40 ) ]
+baked_outlines = [ PoolVector2Array( 194, -109, 123, 99, -49, 219, -142, -40, -83, -133 ) ]
+
+[sub_resource type="NavigationPolygon" id=2]
+vertices = PoolVector2Array( 78, 44, 97, 249, -146, 41, -110, -85, 169, -149 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ), PoolIntArray( 3, 4, 0 ) ]
+outlines = [ PoolVector2Array( -110, -85, 169, -149, 78, 44, 97, 249, -146, 41 ) ]
+baked_outlines = [ PoolVector2Array( 78, 44, 97, 249, -146, 41, -110, -85, 169, -149 ) ]
+
+[sub_resource type="NavigationPolygon" id=3]
+vertices = PoolVector2Array( 75, -11, -65, 113, -147, 69, -142, -44, 50, -72 )
+polygons = [ PoolIntArray( 0, 1, 2, 3, 4 ) ]
+outlines = [ PoolVector2Array( -65, 113, 75, -11, 50, -72, -142, -44, -147, 69 ) ]
+baked_outlines = [ PoolVector2Array( 75, -11, -65, 113, -147, 69, -142, -44, 50, -72 ) ]
+
+[sub_resource type="NavigationPolygon" id=4]
+vertices = PoolVector2Array( 205, -11, 71, 128, -178, 79, -88, -97 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+outlines = [ PoolVector2Array( -88, -97, 205, -11, 71, 128, -178, 79 ) ]
+baked_outlines = [ PoolVector2Array( 205, -11, 71, 128, -178, 79, -88, -97 ) ]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="."]
+navpoly = SubResource( 1 )
+
+[node name="NavigationLink2D" type="NavigationLink2D" parent="."]
+position = Vector2( 188, 27 )
+start_position = Vector2( -100, 0 )
+end_position = Vector2( 200, 0 )
+
+[node name="NavigationPolygonInstance2" type="NavigationPolygonInstance" parent="."]
+position = Vector2( 432, 65 )
+navpoly = SubResource( 2 )
+
+[node name="NavigationLink2D2" type="NavigationLink2D" parent="."]
+position = Vector2( 452, 325 )
+start_position = Vector2( 0, -100 )
+end_position = Vector2( 0, 100 )
+
+[node name="NavigationPolygonInstance3" type="NavigationPolygonInstance" parent="."]
+position = Vector2( 106, 271 )
+navpoly = SubResource( 3 )
+
+[node name="NavigationLink2D3" type="NavigationLink2D" parent="."]
+position = Vector2( 136, 371 )
+start_position = Vector2( 100, 0 )
+end_position = Vector2( -100, 0 )
+
+[node name="NavigationPolygonInstance4" type="NavigationPolygonInstance" parent="."]
+position = Vector2( 309, 434 )
+navpoly = SubResource( 4 )
+
+[node name="NavigationLink2D4" type="NavigationLink2D" parent="."]
+position = Vector2( 57, 184 )
+start_position = Vector2( 0, -100 )
+end_position = Vector2( 0, 100 )
+
+[node name="Character" type="Sprite" parent="."]
+position = Vector2( 64, -52 )
+texture = ExtResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 298, 216 )
+zoom = Vector2( 1.752, 1.752 )
