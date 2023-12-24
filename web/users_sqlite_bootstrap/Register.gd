@@ -1,7 +1,5 @@
 extends UserRegisterWebPage
 
-var Allowlist = load("res://user/Allowlist.gd")
-
 var _registration_validator : FormValidator = null
 
 func log_registration_error(uname_val : String, email_val : String, error_str : String) -> void:
