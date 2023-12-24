@@ -5,7 +5,8 @@
 
 First page content.
 
-![IMage](article_img.png)
+![Image](files/article_img.png)
+
 
 
 
