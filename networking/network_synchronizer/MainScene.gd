@@ -89,7 +89,7 @@ func _on_client_disconnected(peer_id):
 
 
 # --------------------------------------------------------------------------------- Remote functions
-remote func _spawn_new_player(player_id, peer_id):
+func _spawn_new_player(player_id, peer_id):
 	print("Spawn player id: ", player_id, ", Peer_id: ", peer_id)
 	print("While my peer id is: ", get_tree().multiplayer.network_peer.get_unique_id())
 
@@ -100,7 +100,13 @@ remote func _spawn_new_player(player_id, peer_id):
 	character.set_color(COLORS_LIST[player_id])
 
 
-remote func _remove_player(player_id):
+func _remove_player(player_id):
 	var player_node = get_tree().get_current_scene().get_node("player_" + str(player_id))
 	if player_node != null:
 		player_node.queue_free()
+
+
+func _ready() -> void:
+	rpc_config(@"_spawn_new_player", MultiplayerAPI.RPC_MODE_REMOTE)
+	rpc_config(@"_remove_player", MultiplayerAPI.RPC_MODE_REMOTE)
+	
