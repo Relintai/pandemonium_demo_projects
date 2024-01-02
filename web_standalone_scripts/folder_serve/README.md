@@ -1,6 +1,6 @@
 # Folder Serve Demo
 
-This is a small script that serves a simple folder structure as a static site.
+This is a small script that serves a simple folder (and it's subfolders) as a static site.
 
 Similar to `python -m http.server`
 
