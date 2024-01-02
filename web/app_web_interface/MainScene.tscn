@@ -1,0 +1,87 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://ColorSetButton.gd" type="Script" id=1]
+[ext_resource path="res://WebInterface.gd" type="Script" id=2]
+[ext_resource path="res://MainScene.gd" type="Script" id=3]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 1, 1, 1, 1 )
+
+[node name="MainScene" type="Node"]
+script = ExtResource( 3 )
+color_picker_path = NodePath("PanelContainer/VBoxContainer/PanelContainer/MarginContainer/HBoxContainer/ColorPickerButton")
+
+[node name="WebServerSimple" type="WebServerSimple" parent="."]
+start_on_ready = true
+
+[node name="WebInterface" type="WebNode" parent="WebServerSimple"]
+script = ExtResource( 2 )
+target_node = NodePath("../..")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="LinkButton" type="LinkButton" parent="PanelContainer/VBoxContainer"]
+margin_left = 359.0
+margin_right = 665.0
+margin_bottom = 14.0
+size_flags_horizontal = 4
+text = "Open the web interface at http://127.0.0.1:8080"
+uri = "http://127.0.0.1:8080"
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/VBoxContainer"]
+margin_left = 418.0
+margin_top = 289.0
+margin_right = 606.0
+margin_bottom = 329.0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+custom_styles/panel = SubResource( 2 )
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/VBoxContainer/PanelContainer"]
+margin_right = 188.0
+margin_bottom = 40.0
+custom_constants/margin_left = 10
+custom_constants/margin_top = 10
+custom_constants/margin_right = 10
+custom_constants/margin_bottom = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer/PanelContainer/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 178.0
+margin_bottom = 30.0
+size_flags_vertical = 0
+alignment = 1
+
+[node name="Label" type="Label" parent="PanelContainer/VBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
+margin_top = 3.0
+margin_right = 80.0
+margin_bottom = 17.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Set BG Color"
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="PanelContainer/VBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
+margin_left = 84.0
+margin_right = 132.0
+margin_bottom = 20.0
+text = "         "
+
+[node name="ColorSetButton" type="Button" parent="PanelContainer/VBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
+margin_left = 136.0
+margin_right = 168.0
+margin_bottom = 20.0
+text = "Set"
+script = ExtResource( 1 )
+target_node = NodePath("../../../../../..")
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/PanelContainer/MarginContainer/HBoxContainer/ColorSetButton" to="PanelContainer/VBoxContainer/PanelContainer/MarginContainer/HBoxContainer/ColorSetButton" method="_on_ColorSetButton_pressed"]
