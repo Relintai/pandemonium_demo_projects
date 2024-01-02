@@ -13,8 +13,8 @@ instead you need to get the engine, and run it with the `-s` (`--script`) option
 
 ```
 <PROJECT_ROOT>
-    <www_root> <- this directory will be served / set as the www_root. If you have more those are not. Put 
-    
+    www_root <- this directory will be served / set as the www_root. If you have more in subfolders those are not.
+    ... other folders / files
 ```
 
 It parses the other folders and files into a WebNode hierarchy.
