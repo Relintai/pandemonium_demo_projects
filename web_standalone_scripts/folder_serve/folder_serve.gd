@@ -1,8 +1,8 @@
-# Run this script like: /pandemonium -s static_serve.gd test_site_1
+# Run this script like: /pandemonium -s folder_serve.gd .
 
 #extends Node
 extends SceneTree
-class_name StaticServe
+class_name FolderServe
 
 var web_server_simple : WebServerSimple = null
 
