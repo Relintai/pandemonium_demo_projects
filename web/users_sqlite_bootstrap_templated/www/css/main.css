@@ -1,0 +1,32 @@
+
+ul.pagination {
+    padding: 1em 1em 1em 1em;
+    margin: 0;
+    text-align: center;
+}
+
+ul.pagination li {
+    display: inline;
+    border: 1px solid black;
+    padding: 0.2em 0em;
+    margin: 0em 0.2em 0em 0.2em;
+}
+
+ul.pagination li a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.2em 0.4em;
+}
+
+ul.pagination li.disabled {
+    color: rgb(138, 138, 138);
+    text-align: center;
+    text-decoration: none;
+    padding: 0.2em 0.4em;
+}
+
+ul.pagination li a:hover {
+    background-color: rgb(60, 60, 60);
+    color: white;
+}
