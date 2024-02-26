@@ -11,11 +11,7 @@ func _render(request: WebServerRequest, data: Dictionary) -> String:
 	if (!error_str.empty()):
 		data[\"error_str\"] = get_and_render_template(@\"LoginErrorStrTemplate\", data)
 	
-	var uname_val : String = data[\"uname_val\"]
-	data[\"username_prev_value\"] = \"\"
-	
-	if (!uname_val.empty()):
-		data[\"username_prev_value\"] = 'value=\"' + uname_val + '\"'
+	data[\"username_prev_value\"] = data[\"uname_val\"]
 	
 	return get_and_render_template(@\"Login\", data)
 "
