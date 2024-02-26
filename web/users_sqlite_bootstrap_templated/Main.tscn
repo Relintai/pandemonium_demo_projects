@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://WebServerSimple.gd" type="Script" id=1]
 [ext_resource path="res://WebRoot.gd" type="Script" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://templates/RegisterDefaultPage.tres" type="HTMLTemplate" id=9]
 [ext_resource path="res://templates/RegisterSuccessPage.tres" type="HTMLTemplate" id=10]
 [ext_resource path="res://templates/SettingsPage.tres" type="HTMLTemplate" id=11]
+[ext_resource path="res://templates/Root.tres" type="HTMLTemplate" id=12]
 
 [sub_resource type="SessionSetupWebServerMiddleware" id=3]
 
@@ -31,6 +32,7 @@ script = ExtResource( 1 )
 www_root_path = "res://www/"
 middlewares = [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ) ]
 script = ExtResource( 2 )
+template = ExtResource( 12 )
 
 [node name="StaticWebPage" type="StaticWebPage" parent="WebServerSimple/WebRoot"]
 uri_segment = "/"

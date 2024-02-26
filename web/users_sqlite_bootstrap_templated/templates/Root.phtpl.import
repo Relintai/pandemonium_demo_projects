@@ -1,0 +1,13 @@
+[remap]
+
+importer="html_template_data"
+type="HTMLTemplateData"
+path="res://.import/Root.phtpl-903fa95b7c562c95d04ea3da500d65d8.res"
+
+[deps]
+
+source_file="res://templates/Root.phtpl"
+dest_files=[ "res://.import/Root.phtpl-903fa95b7c562c95d04ea3da500d65d8.res" ]
+
+[params]
+

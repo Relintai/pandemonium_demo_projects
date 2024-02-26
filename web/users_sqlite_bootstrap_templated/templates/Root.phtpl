@@ -1,0 +1,52 @@
+
+[ Header ]
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+[ Footer ]
+</div>
+</main>
+<script src="/js/jquery-3.3.1.js"></script>
+<script src="/js/popper.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+[ MainMenu ]
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a href="/" class="navbar-brand">USTB</a>
+	
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item"><a href="/" class="nav-link">Index</a></li>
+			<li class="nav-item"><a href="/user/login" class="nav-link">Login</a></li>
+			<li class="nav-item"><a href="/user/register" class="nav-link">Register</a></li>
+		</ul>
+	</div>
+</nav>
+<main class="mt-5">
+<div class="container-fluid">
+
+[ MainMenuLoggedIn ]
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a href="/" class="navbar-brand">USTB</a>
+	
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item"><a href="/" class="nav-link">Index</a></li>
+			<li class="nav-item"><a href="/user/settings" class="nav-link">User Settings</a></li>
+			<li class="nav-item"><a href="/user/logout" class="nav-link">Logout</a></li>
+			<li class="nav-item"><a href="" class="nav-link">Logged in as: {{ p(user[user_name]) }}!</a></li>
+		</ul>
+	</div>
+</nav>
+<main class="mt-5">
+<div class="container-fluid">
