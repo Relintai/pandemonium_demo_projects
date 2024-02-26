@@ -1,42 +1,16 @@
 
 [ RegisterSuccess ]
-func render_register_success(request: WebServerRequest, data: Dictionary) -> void:
-	var b : HTMLBuilder = HTMLBuilder.new()
-	
-	# Title
-	b.div("row mb-4")
-	b.div("col-2")
-	b.cdiv()
-		
-	b.div("col-8")
-	
-	b.h2()
-	b.w("Registration successful!")
-	b.ch2()
-	
-	b.cdiv()
-	
-	b.div("col-2")
-	b.cdiv()
-	b.cdiv()
-	
-	# msg
-	b.div("row")
-	b.div("col-2")
-	b.cdiv()
-		
-	b.div("col-8")
-	b.w("Login Here:").br()
-	b.br()
-	b.a(redirect_on_success_url)
-	b.w(">> Login <<")
-	b.ca()
-	b.cdiv()
-	
-	b.div("col-2")
-	b.cdiv()
-	b.cdiv()
-	
-	b.write_tag()
-	request.body += b.result
-	request.compile_and_send_body()
+<div class="row mb-4">
+		<div class="col-2"></div>
+		<div class="col-8">	<h2>Registration successful!</h2></div>
+		<div class="col-2"></div>
+</div>
+<div class="row mb-4">
+		<div class="col-2"></div>
+		<div class="col-8">
+			Login Here:<br>
+			<a href="{{ redirect_on_success_url }}">{{ ">> Login <<" }}</a>
+		</div>
+		<div class="col-2"></div>
+</div>
+
