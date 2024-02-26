@@ -1,0 +1,26 @@
+[gd_resource type="HTMLTemplate" load_steps=3 format=2]
+
+[ext_resource path="res://templates/RegisterDefaultPageTD.phtpl" type="HTMLTemplateData" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends HTMLTemplate
+
+func _render(request: WebServerRequest, data: Dictionary) -> String:
+	
+	
+	var error_str : String = data[\"error_str\"]
+	
+	if !error_str.empty():
+		data[\"error_str\"] = get_and_render_template(@\"Error\", data)
+	
+	#b.input_text(\"username\", data[\"uname_val\"], \"\", \"form-control\", \"username_input\")
+	#b.input_text(\"email\", data[\"email_val\"], \"\", \"form-control\", \"email_input\")
+
+	return get_and_render_template(@\"Register\", data)
+"
+
+[resource]
+templates = [ ExtResource( 1 ) ]
+template_override/add_key_button = null
+template_defaults/add_key_button = null
+script = SubResource( 1 )

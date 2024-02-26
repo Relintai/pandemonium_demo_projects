@@ -1,0 +1,13 @@
+[remap]
+
+importer="html_template_data"
+type="HTMLTemplateData"
+path="res://.import/RegisterSuccessPageTD.phtpl-a1401583ad5a9491b7c80bf6f0b9ac04.res"
+
+[deps]
+
+source_file="res://templates/RegisterSuccessPageTD.phtpl"
+dest_files=[ "res://.import/RegisterSuccessPageTD.phtpl-a1401583ad5a9491b7c80bf6f0b9ac04.res" ]
+
+[params]
+

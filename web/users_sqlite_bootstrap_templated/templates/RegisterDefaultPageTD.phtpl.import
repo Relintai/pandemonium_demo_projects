@@ -1,0 +1,13 @@
+[remap]
+
+importer="html_template_data"
+type="HTMLTemplateData"
+path="res://.import/RegisterDefaultPageTD.phtpl-cc8ec9951908604d08d300f8bfc56f98.res"
+
+[deps]
+
+source_file="res://templates/RegisterDefaultPageTD.phtpl"
+dest_files=[ "res://.import/RegisterDefaultPageTD.phtpl-cc8ec9951908604d08d300f8bfc56f98.res" ]
+
+[params]
+
