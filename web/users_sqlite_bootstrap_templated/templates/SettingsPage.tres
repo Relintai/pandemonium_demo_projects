@@ -1,0 +1,26 @@
+[gd_resource type="HTMLTemplate" load_steps=3 format=2]
+
+[ext_resource path="res://templates/SettingsPageTP.phtpl" type="HTMLTemplateData" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends HTMLTemplate
+
+func _render(request: WebServerRequest, data: Dictionary) -> String:
+	data[\"csrf_token\"] = request.get_csrf_token()
+	
+	var error_str : String = data[\"error_str\"]
+	
+	if !error_str.empty():
+		data[\"error_str\"] = get_and_render_template(@\"Error\", data)
+		
+	if error_str.empty() && request.get_method() == HTTPServerEnums.HTTP_METHOD_POST:
+		data[\"error_str\"] = get_and_render_template(@\"Success\", data)
+	
+	return get_and_render_template(@\"Settings\", data)
+"
+
+[resource]
+templates = [ ExtResource( 1 ) ]
+template_override/add_key_button = null
+template_defaults/add_key_button = null
+script = SubResource( 1 )

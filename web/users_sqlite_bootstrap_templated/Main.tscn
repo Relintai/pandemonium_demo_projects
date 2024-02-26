@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://WebServerSimple.gd" type="Script" id=1]
 [ext_resource path="res://WebRoot.gd" type="Script" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://templates/LoginPage.tres" type="HTMLTemplate" id=8]
 [ext_resource path="res://templates/RegisterDefaultPage.tres" type="HTMLTemplate" id=9]
 [ext_resource path="res://templates/RegisterSuccessPage.tres" type="HTMLTemplate" id=10]
+[ext_resource path="res://templates/SettingsPage.tres" type="HTMLTemplate" id=11]
 
 [sub_resource type="SessionSetupWebServerMiddleware" id=3]
 
@@ -77,6 +78,7 @@ uri_segment = "settings"
 logged_out_render_type = 1
 logged_out_redirect_url = "/user/login"
 script = ExtResource( 7 )
+template = ExtResource( 11 )
 
 [node name="HTTPSessionManagerDB" type="HTTPSessionManagerDB" parent="WebServerSimple"]
 script = ExtResource( 3 )

@@ -1,0 +1,13 @@
+[remap]
+
+importer="html_template_data"
+type="HTMLTemplateData"
+path="res://.import/SettingsPageTP.phtpl-edc6f5910c86fd5d50b7b412fc14029e.res"
+
+[deps]
+
+source_file="res://templates/SettingsPageTP.phtpl"
+dest_files=[ "res://.import/SettingsPageTP.phtpl-edc6f5910c86fd5d50b7b412fc14029e.res" ]
+
+[params]
+
