@@ -1,0 +1,13 @@
+[remap]
+
+importer="html_template_data"
+type="HTMLTemplateData"
+path="res://.import/LoginPageTD.phtpl-f9fdc5c73f5a02caa6f37a7c338b3362.res"
+
+[deps]
+
+source_file="res://templates/LoginPageTD.phtpl"
+dest_files=[ "res://.import/LoginPageTD.phtpl-f9fdc5c73f5a02caa6f37a7c338b3362.res" ]
+
+[params]
+

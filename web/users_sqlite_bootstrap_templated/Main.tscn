@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://WebServerSimple.gd" type="Script" id=1]
 [ext_resource path="res://WebRoot.gd" type="Script" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Login.gd" type="Script" id=5]
 [ext_resource path="res://Register.gd" type="Script" id=6]
 [ext_resource path="res://Settings.gd" type="Script" id=7]
+[ext_resource path="res://templates/LoginPage.tres" type="HTMLTemplate" id=8]
 
 [sub_resource type="SessionSetupWebServerMiddleware" id=3]
 
@@ -53,6 +54,7 @@ uri_segment = "login"
 logged_in_render_type = 1
 logged_in_redirect_url = "/"
 script = ExtResource( 5 )
+login_template = ExtResource( 8 )
 
 [node name="Register" type="UserRegisterWebPage" parent="WebServerSimple/WebRoot/UserWebPage"]
 uri_segment = "register"

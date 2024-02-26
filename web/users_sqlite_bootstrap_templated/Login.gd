@@ -1,5 +1,7 @@
 extends UserLoginWebPage
 
+export(HTMLTemplate) var login_template : HTMLTemplate
+
 var _login_validator : FormValidator = null
 
 #func _render_index(request: WebServerRequest) -> void:
@@ -86,78 +88,8 @@ func _render_user_page(request: WebServerRequest, data: Dictionary) -> void:
 	if type == "render_login_success":
 		request.send_redirect(redirect_on_success_url)
 		return
-
-
-	var b : HTMLBuilder = HTMLBuilder.new()
-
-	# Title
-	b.div("row mb-4")
-	b.div("col-2")
-	b.cdiv()
-
-	b.div("col-8")
-
-	b.h2()
-	b.w("Login")
-	b.ch2()
-
-	b.cdiv()
-
-	b.div("col-2")
-	b.cdiv()
-	b.cdiv()
-
-	# Errors
-	var error_str : String = data["error_str"]
-
-	if !error_str.empty():
-		b.div("row mb-4")
-		b.div("col-2")
-		b.cdiv()
-
-		b.div("col-8")
-		b.div("alert alert-danger").attrib("role", "alert")
-		b.w(error_str)
-		b.cdiv()
-		b.cdiv()
-
-		b.div("col-2")
-		b.cdiv()
-		b.cdiv()
-
-	# Form
-	b.div("row")
-	b.div("col-2")
-	b.cdiv()
-
-	b.div("col-8")
-
-	if true:
-		b.form().method_post()
-		b.csrf_tokenr(request)
-
-		b.div("form-group")
-		b.label().fora("username_input").cls("form_label").f().w("Username").clabel()
-		b.input_text("username", data["uname_val"], "", "form-control", "username_input")
-		b.cdiv()
-
-		b.div("form-group")
-		b.label().fora("password_input").cls("form_label").f().w("Password").clabel()
-		b.input_password("password", "", "*******", "form-control", "password_input")
-		b.cdiv()
-			
-		b.button().type("submit").cls("btn btn-outline-primary mt-3").f().w("Send").cbutton()
-
-		b.cform()
-
-	b.cdiv()
-
-	b.div("col-2")
-	b.cdiv()
-	b.cdiv()
-
-	b.write_tag()
-	request.body += b.result
+	
+	request.body += login_template.render(request, data)
 	request.compile_and_send_body()
 
 func _ready() -> void:
