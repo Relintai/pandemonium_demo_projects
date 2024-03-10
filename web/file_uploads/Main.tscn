@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://FileManager.gd" type="Script" id=1]
+
+[node name="Main" type="Node"]
+
+[node name="WebServerSimple" type="WebServerSimple" parent="."]
+start_on_ready = true
+upload_file_store_type = 1
+upload_temp_file_store_path = "user://http_temp_files/"
+upload_request_max_file_size_type = 3
+upload_request_max_file_size = 1
+
+[node name="FileManager" type="WebNode" parent="WebServerSimple"]
+script = ExtResource( 1 )
+render_back_arrow = false
+serve_folder = "user://managed_folder/"
