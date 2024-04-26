@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource path="res://CustomRenderer.gd" type="Script" id=1]
+[ext_resource path="res://NormalRenderer.gd" type="Script" id=2]
+
+[node name="PanelContainer" type="PanelContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Main" type="HBoxContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 1017.0
+margin_bottom = 593.0
+
+[node name="NormalRenderer" type="TextEdit" parent="Main"]
+margin_right = 503.0
+margin_bottom = 586.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+wrap_enabled = true
+script = ExtResource( 2 )
+
+[node name="CustomRenderer" type="TextEdit" parent="Main"]
+margin_left = 507.0
+margin_right = 1010.0
+margin_bottom = 586.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+wrap_enabled = true
+script = ExtResource( 1 )
