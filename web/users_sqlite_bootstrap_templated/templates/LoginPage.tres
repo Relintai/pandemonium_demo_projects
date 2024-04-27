@@ -1,4 +1,4 @@
-[gd_resource type="HTMLTemplate" load_steps=3 format=2]
+[gd_resource type="HTMLTemplate" load_steps=3 format=3]
 
 [ext_resource path="res://templates/LoginPageTD.phtpl" type="HTMLTemplateData" id=1]
 
