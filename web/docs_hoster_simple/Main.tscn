@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource path="res://BrowsableFolderServeWebPage.gd" type="Script" id=1]
+
+[node name="Main" type="Node"]
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="CC" type="CenterContainer" parent="PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 1017.0
+margin_bottom = 593.0
+
+[node name="LinkButton" type="LinkButton" parent="PanelContainer/CC"]
+margin_left = 437.0
+margin_top = 286.0
+margin_right = 573.0
+margin_bottom = 300.0
+text = "http://127.0.0.1:8080"
+uri = "http://127.0.0.1:8080"
+
+[node name="WebServerSimple" type="WebServerSimple" parent="."]
+start_on_ready = true
+
+[node name="BrowsableFolderServeWebPage" type="BrowsableFolderServeWebPage" parent="WebServerSimple"]
+uri_segment = "/"
+serve_folder = "res://www/"
+script = ExtResource( 1 )
