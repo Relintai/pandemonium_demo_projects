@@ -1,0 +1,39 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource path="res://floor.png" type="Texture" id=1]
+[ext_resource path="res://twig.png" type="Texture" id=2]
+[ext_resource path="res://bark.jpg" type="Texture" id=3]
+
+[sub_resource type="PlaneMesh" id=1]
+size = Vector2( 100, 100 )
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( 5, 5, 5 )
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_texture = ExtResource( 3 )
+
+[sub_resource type="SpatialMaterial" id=4]
+flags_transparent = true
+albedo_texture = ExtResource( 2 )
+
+[sub_resource type="ProceduralTreeMesh" id=3]
+twig_material = SubResource( 4 )
+trunk_material = SubResource( 5 )
+
+[node name="Main" type="Spatial"]
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.995856, 0.0909454, 0, -0.0909454, 0.995856, 0, 3.24964, 6.08982 )
+
+[node name="Floor" type="MeshInstance" parent="."]
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="Tree" type="MeshInstance" parent="."]
+mesh = SubResource( 3 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 0.999979, -0.00633815, 0.00104455, 0.0021793, 0.487706, 0.873005, -0.00604267, -0.872985, 0.487709, 0, 12.7518, 7.74885 )
+light_energy = 0.413
