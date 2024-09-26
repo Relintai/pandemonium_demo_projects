@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=12 format=3]
 
 [ext_resource path="res://Demos/SeekFlee/Player.gd" type="Script" id=2]
 [ext_resource path="res://Demos/SeekFlee/SeekFleeDemo.gd" type="Script" id=3]
@@ -74,7 +74,7 @@ shape = SubResource( 3 )
 
 [node name="Spawner" type="Node2D" parent="."]
 script = ExtResource( 4 )
-Entity = ExtResource( 6 )
+entity = ExtResource( 6 )
 
 [node name="DemoInterface" parent="." instance=ExtResource( 5 )]
 text_bbcode = "Seek & Flee Demo

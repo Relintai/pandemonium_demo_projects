@@ -33,7 +33,7 @@ func _ready() -> void:
 			rng.randf_range(0, camera_boundaries.size.x),
 			rng.randf_range(0, camera_boundaries.size.y)
 		)
-		var entity: KinematicBody2D = spawner.Entity.instance()
+		var entity: KinematicBody2D = spawner.entity.instance()
 		entity.global_position = new_pos
 		entity.player_agent = player.agent
 		entity.start_speed = linear_speed_max
