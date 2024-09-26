@@ -20,7 +20,8 @@ efficient than complex pathfinding algorithms like A\*.
 
 ## The framework
 
-This project is a framework for the [Godot game engine](https://godotengine.org/). It takes inspiration from the excellent [GDX-AI](https://github.com/libgdx/gdx-ai) framework for the [LibGDX](https://libgdx.badlogicgames.com/) java-based framework.
+This project takes inspiration from the excellent [GDX-AI](https://github.com/libgdx/gdx-ai) framework for the [LibGDX](https://libgdx.badlogicgames.com/) 
+java-based framework.
 
 Every class in the framework extends Godot's [Reference](https://docs.godotengine.org/en/latest/classes/class_reference.html) type. 
 There is no need to have a complex scene tree; you can contain that has to do with the AI's movement inside GDScript classes.
