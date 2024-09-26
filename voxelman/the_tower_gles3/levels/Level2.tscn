@@ -214,7 +214,7 @@ shadow_enabled = true
 [node name="Player" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.12439, 25.2891, 17.5787 )
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment3D" parent="."]
 environment = ExtResource( 5 )
 
 [node name="GIProbe" type="GIProbe" parent="."]
