@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource path="res://particles/flake.png" type="Texture" id=1]
+
+[sub_resource type="SpatialMaterial" id=13]
+flags_transparent = true
+vertex_color_use_as_albedo = true
+params_specular_mode = 4
+params_billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+albedo_texture = ExtResource( 1 )
+
+[sub_resource type="QuadMesh" id=14]
+material = SubResource( 13 )
+
+[sub_resource type="Gradient" id=15]
+
+[node name="Particles" type="CPUParticles"]
+mesh = SubResource( 14 )
+emission_shape = 2
+emission_box_extents = Vector3( 70, 70, 70 )
+gravity = Vector3( 0, -0.4, 0 )
+initial_velocity_random = 0.15
+angular_velocity = 16.55
+angular_velocity_random = 0.51
+radial_accel = -0.05
+radial_accel_random = 0.37
+scale_amount = 0.4
+color_ramp = SubResource( 15 )
+hue_variation = 0.48
+hue_variation_random = 0.09
+anim_speed = 44.14
+anim_offset = 0.07

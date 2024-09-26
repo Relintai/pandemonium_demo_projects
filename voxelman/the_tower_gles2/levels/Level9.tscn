@@ -1,0 +1,220 @@
+[gd_scene load_steps=14 format=3]
+
+[ext_resource path="res://levels/Particles.tscn" type="PackedScene" id=1]
+[ext_resource path="res://areas/ExitPortal.tscn" type="PackedScene" id=2]
+[ext_resource path="res://levels/WorldEnvironment.tscn" type="PackedScene" id=3]
+[ext_resource path="res://library/MainLibrary.tres" type="VoxelLibrarySimple" id=4]
+[ext_resource path="res://player/Player.tscn" type="PackedScene" id=5]
+
+[sub_resource type="VoxelChunkBlocky" id=1]
+resource_name = "Chunk[0,-1,-1]"
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16, -16 )
+position_y = -1
+position_z = -1
+size_x = 16
+size_y = 16
+size_z = 16
+data_size_x = 18
+data_size_y = 18
+data_size_z = 18
+margin_start = 1
+margin_end = 1
+library = ExtResource( 4 )
+channel_count = 1
+data_channel = PoolByteArray( "HwABAP//////////////////////////Tx8BTxT//2JQAAAAAAA=" )
+
+[sub_resource type="VoxelChunkBlocky" id=2]
+resource_name = "Chunk[-1,-1,0]"
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -16, 0 )
+position_x = -1
+position_y = -1
+size_x = 16
+size_y = 16
+size_z = 16
+data_size_x = 18
+data_size_y = 18
+data_size_z = 18
+margin_start = 1
+margin_end = 1
+library = ExtResource( 4 )
+channel_count = 1
+data_channel = PoolByteArray( "HwABAMEfAdUANA5IAA4SAA8CAMUP6gAjDjYADxIAEQ8CAP//////////////////////////P1AAAAAAAA==" )
+
+[sub_resource type="VoxelChunkBlocky" id=3]
+resource_name = "Chunk[-1,-1,-1]"
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, -16, -16 )
+position_x = -1
+position_y = -1
+position_z = -1
+size_x = 16
+size_y = 16
+size_z = 16
+data_size_x = 18
+data_size_y = 18
+data_size_z = 18
+margin_start = 1
+margin_end = 1
+library = ExtResource( 4 )
+channel_count = 1
+data_channel = PoolByteArray( "HwABAP////////////////////8CHwEGEP8xDkQBHwETAAAPaQH/DA4xAQ8CAP8fD3UCAA8CAP8fD4cCNQ5IAA4SAA8CAMUP6gAjDjYADxIAD1AAAAAAAA==" )
+
+[sub_resource type="VoxelChunkBlocky" id=4]
+resource_name = "Chunk[0,-1,0]"
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16, 0 )
+position_y = -1
+size_x = 16
+size_y = 16
+size_z = 16
+data_size_x = 18
+data_size_y = 18
+data_size_z = 18
+margin_start = 1
+margin_end = 1
+library = ExtResource( 4 )
+channel_count = 1
+data_channel = PoolByteArray( "HwABAP9AHwFTAf9ADwIA//////////////////////////8eUAAAAAAA" )
+
+[sub_resource type="VoxelChunkBlocky" id=15]
+resource_name = "Chunk[-1,0,-1]"
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -16 )
+position_x = -1
+position_z = -1
+size_x = 16
+size_y = 16
+size_z = 16
+data_size_x = 18
+data_size_y = 18
+data_size_z = 18
+margin_start = 1
+margin_end = 1
+library = ExtResource( 4 )
+channel_count = 1
+data_channel = PoolByteArray( "HwABAP////+6HwHKBP8xD0QB/0QOVgEPEgARDwIA6Q4gAQ8CAP///////zUPVAb5DwwBJQ84ACUPAgDBDgwBLQEBFAAOEgAdACQADwIA6A8MAfkPAgAlD0QB/zIPAgD/q1AAAAAAAA==" )
+
+[sub_resource type="VoxelChunkBlocky" id=16]
+resource_name = "Chunk[0,0,-1]"
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16 )
+position_z = -1
+size_x = 16
+size_y = 16
+size_z = 16
+data_size_x = 18
+data_size_y = 18
+data_size_z = 18
+margin_start = 1
+margin_end = 1
+library = ExtResource( 4 )
+channel_count = 1
+data_channel = PoolByteArray( "HwABAP///////0gdAVYGDxIAAA0TAA4SAA8lAAAfACUAAA1uAA8CAP///////////////////+lQAAAAAAA=" )
+
+[sub_resource type="VoxelChunkBlocky" id=17]
+resource_name = "Chunk[0,0,-2]"
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -32 )
+position_z = -2
+size_x = 16
+size_y = 16
+size_z = 16
+data_size_x = 18
+data_size_y = 18
+data_size_z = 18
+margin_start = 1
+margin_end = 1
+library = ExtResource( 4 )
+channel_count = 1
+data_channel = PoolByteArray( "HwABAP///////////////////zIdATcPDhIADwIA/w4dAiEBDUQBHAESABwBEgAMEAAPAgDcD0QBEA8CAA8MZQEPAgDcDv8ADhIADwIADg8zACAPAgD///84UAAAAAAA" )
+
+[sub_resource type="VoxelChunkBlocky" id=18]
+resource_name = "Chunk[-1,0,-2]"
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -32 )
+position_x = -1
+position_z = -2
+size_x = 16
+size_y = 16
+size_z = 16
+data_size_x = 18
+data_size_y = 18
+data_size_z = 18
+margin_start = 1
+margin_end = 1
+library = ExtResource( 4 )
+channel_count = 1
+data_channel = PoolByteArray( "HwABAP////////////////////8vHQEzEA8SACMPAgDpDjIBHQIPAQ4SAA42AA8CAOkODgEOMgEOEgAONgAPAgDpDg4BDxIAIw8CAP//a1AAAAAAAA==" )
+
+[node name="Level9" type="VoxelWorldBlocky"]
+editable = true
+max_concurrent_generations = 5
+library = ExtResource( 4 )
+chunks = [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ) ]
+num_lods = 5
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="WorldEnvironment" parent="." instance=ExtResource( 3 )]
+
+[node name="Player" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.852744, 0.290306, 0.122863 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 0.969817, 0.22762, -0.0874344, 0, 0.35858, 0.933499, 0.243835, -0.905323, 0.347757, 0, 5.5679, -6.05193 )
+light_color = Color( 0.47451, 0.352941, 0.607843, 1 )
+light_energy = 0.31
+shadow_enabled = true
+
+[node name="DirectionalLight2" type="DirectionalLight" parent="."]
+transform = Transform( 0.902848, -0.382056, -0.197228, 0, -0.458712, 0.888585, -0.42996, -0.802257, -0.414147, 0, 5.5679, -6.94149 )
+light_color = Color( 0.682353, 0.145098, 0.145098, 1 )
+light_energy = 0.17
+shadow_enabled = true
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.33566, 8.78919, -13.4252 )
+light_color = Color( 0.894118, 0.894118, 0.894118, 1 )
+light_energy = 1.17
+light_negative = true
+shadow_enabled = true
+omni_range = 7.3664
+omni_attenuation = 2.0
+omni_shadow_mode = 0
+
+[node name="OmniLight2" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.18059, 1.65957, -15.6395 )
+light_color = Color( 0.141176, 0.427451, 0.552941, 1 )
+light_energy = 2.55
+light_indirect_energy = 5.47
+light_specular = 0.61
+omni_range = 8.88538
+omni_attenuation = 1.1487
+
+[node name="OmniLight3" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.2802, 1.65957, -7.3639 )
+light_color = Color( 0.462745, 0.0980392, 0.380392, 1 )
+light_energy = 2.55
+light_indirect_energy = 5.47
+light_specular = 0.61
+omni_range = 8.88538
+omni_attenuation = 1.1487
+
+[node name="OmniLight4" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.53726, 4.41136, -7.73945 )
+light_color = Color( 0.164706, 0.054902, 0.690196, 1 )
+light_energy = 2.55
+light_indirect_energy = 5.47
+light_specular = 0.61
+omni_range = 8.88538
+omni_attenuation = 0.406128
+
+[node name="OmniLight5" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.674599, 2.49094, 1.27345 )
+light_color = Color( 0.372549, 0.572549, 0.705882, 1 )
+light_energy = 0.83
+light_indirect_energy = 5.47
+light_negative = true
+light_specular = 0.61
+omni_range = 7.6254
+omni_attenuation = 0.70711
+
+[node name="Particles" parent="." instance=ExtResource( 1 )]
+
+[node name="ExitPortal" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.922967, 6.98507, -18.9305 )
