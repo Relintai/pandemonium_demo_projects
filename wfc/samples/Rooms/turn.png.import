@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/turn.png-1ffa82e1aa700e4967dd61c086e25087.image"
+
+[deps]
+
+source_file="res://samples/Rooms/turn.png"
+dest_files=[ "res://.import/turn.png-1ffa82e1aa700e4967dd61c086e25087.image" ]
+
+[params]
+

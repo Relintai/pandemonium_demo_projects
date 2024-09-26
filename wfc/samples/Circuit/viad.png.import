@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/viad.png-65040bfbd0dcb63259b25bb4bdda001f.image"
+
+[deps]
+
+source_file="res://samples/Circuit/viad.png"
+dest_files=[ "res://.import/viad.png-65040bfbd0dcb63259b25bb4bdda001f.image" ]
+
+[params]
+

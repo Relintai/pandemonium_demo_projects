@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Skyline.png-b2283bbda1685d3d588bfa933c9c8f97.image"
+
+[deps]
+
+source_file="res://samples/Skyline.png"
+dest_files=[ "res://.import/Skyline.png-b2283bbda1685d3d588bfa933c9c8f97.image" ]
+
+[params]
+

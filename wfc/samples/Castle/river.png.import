@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/river.png-5f0fcfd15a1f7b7334f700e93c14d69e.image"
+
+[deps]
+
+source_file="res://samples/Castle/river.png"
+dest_files=[ "res://.import/river.png-5f0fcfd15a1f7b7334f700e93c14d69e.image" ]
+
+[params]
+

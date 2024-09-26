@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/wall.png-365797b01de8fc5f6e273ebdc166eb6f.image"
+
+[deps]
+
+source_file="res://samples/Rooms/wall.png"
+dest_files=[ "res://.import/wall.png-365797b01de8fc5f6e273ebdc166eb6f.image" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Red Dot.png-7f5bc93973197fa6e6f5eb350acc663b.image"
+
+[deps]
+
+source_file="res://samples/Red Dot.png"
+dest_files=[ "res://.import/Red Dot.png-7f5bc93973197fa6e6f5eb350acc663b.image" ]
+
+[params]
+

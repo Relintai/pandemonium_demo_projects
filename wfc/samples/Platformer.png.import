@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Platformer.png-e12f754a5fb05aa8924f33a84d78e09f.image"
+
+[deps]
+
+source_file="res://samples/Platformer.png"
+dest_files=[ "res://.import/Platformer.png-e12f754a5fb05aa8924f33a84d78e09f.image" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/corner.png-50994aac180a73c57bfdd8cd8eb28fa2.image"
+
+[deps]
+
+source_file="res://samples/Circuit/corner.png"
+dest_files=[ "res://.import/corner.png-50994aac180a73c57bfdd8cd8eb28fa2.image" ]
+
+[params]
+

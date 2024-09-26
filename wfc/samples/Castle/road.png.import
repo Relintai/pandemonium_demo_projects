@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/road.png-f9a0ae8c6f74ee4ce323e98182de65e6.image"
+
+[deps]
+
+source_file="res://samples/Castle/road.png"
+dest_files=[ "res://.import/road.png-f9a0ae8c6f74ee4ce323e98182de65e6.image" ]
+
+[params]
+

@@ -1,0 +1,143 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://TextureRect.gd" type="Script" id=1]
+[ext_resource path="res://new_buttongroup.tres" type="ButtonGroup" id=2]
+
+[node name="Control" type="PanelContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+source_image_rect_path = NodePath("VBoxContainer2/VBoxContainer/HBoxContainer/TextureRect")
+result_image_rect_path = NodePath("VBoxContainer2/VBoxContainer/HBoxContainer2/TextureRect")
+settings_label_path = NodePath("VBoxContainer2/VBoxContainer/HBoxContainer3/ScrollContainer/Label2")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 1017.0
+margin_bottom = 593.0
+
+[node name="VBoxContainer" type="HBoxContainer" parent="VBoxContainer2"]
+margin_right = 1010.0
+margin_bottom = 562.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer"]
+margin_right = 300.0
+margin_bottom = 562.0
+
+[node name="Label" type="Label" parent="VBoxContainer2/VBoxContainer/HBoxContainer"]
+margin_right = 300.0
+margin_bottom = 14.0
+text = "Source Image"
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer2/VBoxContainer/HBoxContainer"]
+margin_top = 18.0
+margin_right = 300.0
+margin_bottom = 318.0
+rect_min_size = Vector2( 300, 300 )
+expand = true
+
+[node name="HBoxContainer2" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer"]
+margin_left = 304.0
+margin_right = 604.0
+margin_bottom = 562.0
+
+[node name="Label" type="Label" parent="VBoxContainer2/VBoxContainer/HBoxContainer2"]
+margin_right = 300.0
+margin_bottom = 14.0
+text = "Generated Image"
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer2/VBoxContainer/HBoxContainer2"]
+margin_top = 18.0
+margin_right = 300.0
+margin_bottom = 318.0
+rect_min_size = Vector2( 300, 300 )
+expand = true
+
+[node name="Label2" type="Label" parent="VBoxContainer2/VBoxContainer/HBoxContainer2"]
+margin_top = 322.0
+margin_right = 300.0
+margin_bottom = 387.0
+text = "Note: If an image does not appear here, that means the generation has failed. At this stage it's likely a bug. Try clicking randomize a few times."
+autowrap = true
+
+[node name="HBoxContainer3" type="VBoxContainer" parent="VBoxContainer2/VBoxContainer"]
+margin_left = 608.0
+margin_right = 1010.0
+margin_bottom = 562.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="VBoxContainer2/VBoxContainer/HBoxContainer3"]
+margin_right = 402.0
+margin_bottom = 14.0
+text = "Settings"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer2/VBoxContainer/HBoxContainer3"]
+margin_top = 18.0
+margin_right = 402.0
+margin_bottom = 562.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label2" type="Label" parent="VBoxContainer2/VBoxContainer/HBoxContainer3/ScrollContainer"]
+margin_right = 402.0
+margin_bottom = 544.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+autowrap = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer2"]
+margin_top = 566.0
+margin_right = 1010.0
+margin_bottom = 586.0
+alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer2/HBoxContainer"]
+margin_left = 296.0
+margin_right = 336.0
+margin_bottom = 20.0
+text = "Prev"
+
+[node name="Button5" type="Button" parent="VBoxContainer2/HBoxContainer"]
+margin_left = 340.0
+margin_right = 423.0
+margin_bottom = 20.0
+text = "Randomize"
+
+[node name="Button2" type="Button" parent="VBoxContainer2/HBoxContainer"]
+margin_left = 427.0
+margin_right = 469.0
+margin_bottom = 20.0
+text = "Next"
+
+[node name="Control" type="Control" parent="VBoxContainer2/HBoxContainer"]
+margin_left = 473.0
+margin_right = 573.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 100, 0 )
+
+[node name="Button3" type="Button" parent="VBoxContainer2/HBoxContainer"]
+margin_left = 577.0
+margin_right = 666.0
+margin_bottom = 20.0
+toggle_mode = true
+pressed = true
+group = ExtResource( 2 )
+text = "Overlapping"
+
+[node name="Button4" type="Button" parent="VBoxContainer2/HBoxContainer"]
+margin_left = 670.0
+margin_right = 713.0
+margin_bottom = 20.0
+toggle_mode = true
+group = ExtResource( 2 )
+text = "Tiled"
+
+[connection signal="pressed" from="VBoxContainer2/HBoxContainer/Button" to="." method="_on_prev_pressed"]
+[connection signal="pressed" from="VBoxContainer2/HBoxContainer/Button5" to="." method="_on_randomize_pressed"]
+[connection signal="pressed" from="VBoxContainer2/HBoxContainer/Button2" to="." method="_on_next_pressed"]
+[connection signal="toggled" from="VBoxContainer2/HBoxContainer/Button3" to="." method="_on_overlapping_toggled"]
+[connection signal="toggled" from="VBoxContainer2/HBoxContainer/Button4" to="." method="_on_tiled_toggled"]

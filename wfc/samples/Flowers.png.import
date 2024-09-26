@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Flowers.png-1ebf61d5a10fd735a69044de431e8c42.image"
+
+[deps]
+
+source_file="res://samples/Flowers.png"
+dest_files=[ "res://.import/Flowers.png-1ebf61d5a10fd735a69044de431e8c42.image" ]
+
+[params]
+

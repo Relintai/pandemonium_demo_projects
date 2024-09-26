@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/bridge.png-1cf400ab9d999f063eb4385968e6caeb.image"
+
+[deps]
+
+source_file="res://samples/Circuit/bridge.png"
+dest_files=[ "res://.import/bridge.png-1cf400ab9d999f063eb4385968e6caeb.image" ]
+
+[params]
+

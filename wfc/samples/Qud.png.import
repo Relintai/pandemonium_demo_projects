@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Qud.png-5448d873f589801341553f7e3434f731.image"
+
+[deps]
+
+source_file="res://samples/Qud.png"
+dest_files=[ "res://.import/Qud.png-5448d873f589801341553f7e3434f731.image" ]
+
+[params]
+

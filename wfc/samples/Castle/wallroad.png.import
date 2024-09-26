@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/wallroad.png-74bd46387cf589ce90ddf81952d51b72.image"
+
+[deps]
+
+source_file="res://samples/Castle/wallroad.png"
+dest_files=[ "res://.import/wallroad.png-74bd46387cf589ce90ddf81952d51b72.image" ]
+
+[params]
+

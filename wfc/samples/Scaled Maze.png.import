@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Scaled Maze.png-d9df44305894d8908f6813ff89866170.image"
+
+[deps]
+
+source_file="res://samples/Scaled Maze.png"
+dest_files=[ "res://.import/Scaled Maze.png-d9df44305894d8908f6813ff89866170.image" ]
+
+[params]
+

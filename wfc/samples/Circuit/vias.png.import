@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/vias.png-7ee367921f337b4429a5d6da0312126a.image"
+
+[deps]
+
+source_file="res://samples/Circuit/vias.png"
+dest_files=[ "res://.import/vias.png-7ee367921f337b4429a5d6da0312126a.image" ]
+
+[params]
+

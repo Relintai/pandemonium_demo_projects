@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/tower.png-edbac699da852c031b1a3334f6aa5604.image"
+
+[deps]
+
+source_file="res://samples/Castle/tower.png"
+dest_files=[ "res://.import/tower.png-edbac699da852c031b1a3334f6aa5604.image" ]
+
+[params]
+

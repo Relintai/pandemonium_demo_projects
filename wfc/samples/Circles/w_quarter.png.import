@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/w_quarter.png-8a5c2867ca1f06465e7d846c3a0bd3a3.image"
+
+[deps]
+
+source_file="res://samples/Circles/w_quarter.png"
+dest_files=[ "res://.import/w_quarter.png-8a5c2867ca1f06465e7d846c3a0bd3a3.image" ]
+
+[params]
+

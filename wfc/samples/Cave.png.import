@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Cave.png-0ff127fea4c812bd0f2892133050620b.image"
+
+[deps]
+
+source_file="res://samples/Cave.png"
+dest_files=[ "res://.import/Cave.png-0ff127fea4c812bd0f2892133050620b.image" ]
+
+[params]
+

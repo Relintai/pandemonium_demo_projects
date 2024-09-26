@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/empty.png-6eef1ed1c2f4ed0a003fe60dfa7f2e5c.image"
+
+[deps]
+
+source_file="res://samples/Knots/empty.png"
+dest_files=[ "res://.import/empty.png-6eef1ed1c2f4ed0a003fe60dfa7f2e5c.image" ]
+
+[params]
+

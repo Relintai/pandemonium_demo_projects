@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Village.png-462c61d73f2368e65a9f069127b877ec.image"
+
+[deps]
+
+source_file="res://samples/Village.png"
+dest_files=[ "res://.import/Village.png-462c61d73f2368e65a9f069127b877ec.image" ]
+
+[params]
+

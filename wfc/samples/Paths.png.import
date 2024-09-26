@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Paths.png-208a7661757d17f566dd57058034bfff.image"
+
+[deps]
+
+source_file="res://samples/Paths.png"
+dest_files=[ "res://.import/Paths.png-208a7661757d17f566dd57058034bfff.image" ]
+
+[params]
+

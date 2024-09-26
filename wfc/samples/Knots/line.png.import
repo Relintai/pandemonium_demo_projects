@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/line.png-08f04f04fdb2dd1bc10f98e052976d79.image"
+
+[deps]
+
+source_file="res://samples/Knots/line.png"
+dest_files=[ "res://.import/line.png-08f04f04fdb2dd1bc10f98e052976d79.image" ]
+
+[params]
+

@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Cat.png-932cc11b5881541cfa86a1eb715e8c83.image"
+
+[deps]
+
+source_file="res://samples/Cat.png"
+dest_files=[ "res://.import/Cat.png-932cc11b5881541cfa86a1eb715e8c83.image" ]
+
+[params]
+

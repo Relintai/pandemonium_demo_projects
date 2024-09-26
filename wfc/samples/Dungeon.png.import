@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Dungeon.png-c05742c5e5689c332e1ad6829fe36ee2.image"
+
+[deps]
+
+source_file="res://samples/Dungeon.png"
+dest_files=[ "res://.import/Dungeon.png-c05742c5e5689c332e1ad6829fe36ee2.image" ]
+
+[params]
+

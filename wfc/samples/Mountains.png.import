@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Mountains.png-e9aecd052eb416d8cac9e36436967995.image"
+
+[deps]
+
+source_file="res://samples/Mountains.png"
+dest_files=[ "res://.import/Mountains.png-e9aecd052eb416d8cac9e36436967995.image" ]
+
+[params]
+

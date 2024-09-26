@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/corner.png-61e14680961df5adc0813d7161d88784.image"
+
+[deps]
+
+source_file="res://samples/Rooms/corner.png"
+dest_files=[ "res://.import/corner.png-61e14680961df5adc0813d7161d88784.image" ]
+
+[params]
+

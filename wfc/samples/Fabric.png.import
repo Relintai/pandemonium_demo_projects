@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Fabric.png-c03134096bb2a3dccd9e1dc22fd2f122.image"
+
+[deps]
+
+source_file="res://samples/Fabric.png"
+dest_files=[ "res://.import/Fabric.png-c03134096bb2a3dccd9e1dc22fd2f122.image" ]
+
+[params]
+

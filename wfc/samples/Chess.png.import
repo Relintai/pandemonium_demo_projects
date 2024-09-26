@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Chess.png-2ba13af47355ca5f0adaa09b356c7a06.image"
+
+[deps]
+
+source_file="res://samples/Chess.png"
+dest_files=[ "res://.import/Chess.png-2ba13af47355ca5f0adaa09b356c7a06.image" ]
+
+[params]
+

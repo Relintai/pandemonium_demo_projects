@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Link.png-3751d77858a8614768f82cdc1435cd7c.image"
+
+[deps]
+
+source_file="res://samples/Link.png"
+dest_files=[ "res://.import/Link.png-3751d77858a8614768f82cdc1435cd7c.image" ]
+
+[params]
+

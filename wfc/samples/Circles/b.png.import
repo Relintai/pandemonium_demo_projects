@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/b.png-f87d48caf3e9f5bacd66d132d08324a7.image"
+
+[deps]
+
+source_file="res://samples/Circles/b.png"
+dest_files=[ "res://.import/b.png-f87d48caf3e9f5bacd66d132d08324a7.image" ]
+
+[params]
+

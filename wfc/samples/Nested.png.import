@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Nested.png-be019275952b53b75de9fb38d2d6b2d4.image"
+
+[deps]
+
+source_file="res://samples/Nested.png"
+dest_files=[ "res://.import/Nested.png-be019275952b53b75de9fb38d2d6b2d4.image" ]
+
+[params]
+

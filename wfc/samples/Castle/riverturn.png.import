@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/riverturn.png-2bb4e468f6108a16610b2f8b0d5d6ce6.image"
+
+[deps]
+
+source_file="res://samples/Castle/riverturn.png"
+dest_files=[ "res://.import/riverturn.png-2bb4e468f6108a16610b2f8b0d5d6ce6.image" ]
+
+[params]
+

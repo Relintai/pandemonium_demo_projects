@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/t.png-31b04ba644ce32cb476df1affa5cc0ce.image"
+
+[deps]
+
+source_file="res://samples/Knots/t.png"
+dest_files=[ "res://.import/t.png-31b04ba644ce32cb476df1affa5cc0ce.image" ]
+
+[params]
+

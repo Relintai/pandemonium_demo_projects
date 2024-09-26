@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/Spirals.png-603e5217c7589185e5a14c74aebc5764.image"
+
+[deps]
+
+source_file="res://samples/Spirals.png"
+dest_files=[ "res://.import/Spirals.png-603e5217c7589185e5a14c74aebc5764.image" ]
+
+[params]
+

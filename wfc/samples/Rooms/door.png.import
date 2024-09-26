@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/door.png-d373f080cfeb233b3cc3f324d16235ce.image"
+
+[deps]
+
+source_file="res://samples/Rooms/door.png"
+dest_files=[ "res://.import/door.png-d373f080cfeb233b3cc3f324d16235ce.image" ]
+
+[params]
+

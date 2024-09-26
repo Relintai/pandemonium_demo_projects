@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/skew.png-dbe735c38bfcfb6d09d4502d18670854.image"
+
+[deps]
+
+source_file="res://samples/Circuit/skew.png"
+dest_files=[ "res://.import/skew.png-dbe735c38bfcfb6d09d4502d18670854.image" ]
+
+[params]
+

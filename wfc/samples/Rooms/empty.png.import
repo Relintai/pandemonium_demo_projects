@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/empty.png-a62bf6c25e27fc8335d66f02e88d8ee2.image"
+
+[deps]
+
+source_file="res://samples/Rooms/empty.png"
+dest_files=[ "res://.import/empty.png-a62bf6c25e27fc8335d66f02e88d8ee2.image" ]
+
+[params]
+

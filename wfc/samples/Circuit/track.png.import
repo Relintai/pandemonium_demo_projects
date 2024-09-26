@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/track.png-4e6048571720ac9b03aab4d2544157ef.image"
+
+[deps]
+
+source_file="res://samples/Circuit/track.png"
+dest_files=[ "res://.import/track.png-4e6048571720ac9b03aab4d2544157ef.image" ]
+
+[params]
+

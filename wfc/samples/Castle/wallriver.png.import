@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/wallriver.png-42bb5505ae7a7f3156bd6779c9113161.image"
+
+[deps]
+
+source_file="res://samples/Castle/wallriver.png"
+dest_files=[ "res://.import/wallriver.png-42bb5505ae7a7f3156bd6779c9113161.image" ]
+
+[params]
+
