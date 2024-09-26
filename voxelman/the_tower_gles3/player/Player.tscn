@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=8 format=3]
 
 [ext_resource path="res://player/Player.gd" type="Script" id=1]
 [ext_resource path="res://sounds/edited/stepdirt_1.wav" type="AudioStream" id=2]
@@ -31,7 +31,7 @@ cast_to = Vector3( 0, -0.4, 0 )
 
 [node name="foot" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource( 2 )
-bus = "Footsteps"
+bus = @"Footsteps"
 
 [node name="Menu" type="CenterContainer" parent="."]
 visible = false

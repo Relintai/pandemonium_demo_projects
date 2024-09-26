@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=19 format=3]
 
 [ext_resource path="res://areas/ExitPortal.tscn" type="PackedScene" id=2]
 [ext_resource path="res://environments/red_env.tres" type="Environment3D" id=3]
@@ -21,7 +21,7 @@ margin_start = 1
 margin_end = 1
 library = ExtResource( 4 )
 channel_count = 1
-data_channel = PoolByteArray( 31, 0, 1, 0, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 80, 31, 1, 80, 20, 255, 255, 97, 80, 0, 0, 0, 0, 0 )
+data_channel = PoolByteArray( "HwABAP//////////////////////////UB8BUBT//2FQAAAAAAA=" )
 
 [sub_resource type="VoxelChunkBlocky" id=15]
 resource_name = "Chunk[-1,0,-1]"
@@ -38,7 +38,7 @@ margin_start = 1
 margin_end = 1
 library = ExtResource( 4 )
 channel_count = 1
-data_channel = PoolByteArray( 31, 0, 1, 0, 128, 29, 1, 148, 0, 15, 18, 0, 35, 15, 2, 0, 233, 14, 50, 1, 29, 2, 15, 1, 14, 18, 0, 14, 54, 0, 15, 2, 0, 233, 14, 14, 1, 14, 50, 1, 14, 18, 0, 14, 54, 0, 15, 2, 0, 233, 14, 14, 1, 15, 18, 0, 35, 15, 2, 0, 251, 14, 68, 1, 15, 2, 0, 255, 32, 15, 68, 1, 195, 14, 214, 0, 14, 18, 0, 15, 2, 0, 35, 14, 72, 0, 46, 1, 1, 20, 0, 15, 2, 0, 177, 15, 214, 0, 195, 15, 2, 0, 90, 15, 26, 2, 196, 15, 2, 0, 89, 15, 67, 1, 255, 49, 15, 202, 3, 255, 50, 15, 68, 1, 255, 51, 15, 2, 0, 255, 255, 175, 15, 72, 5, 255, 50, 15, 2, 0, 255, 121, 13, 91, 9, 13, 17, 0, 15, 246, 6, 36, 14, 40, 3, 14, 18, 0, 15, 2, 0, 255, 63, 80, 0, 0, 0, 0, 0 )
+data_channel = PoolByteArray( "HwABAIAdAZQADxIAIw8CAOkOMgEdAg8BDhIADjYADwIA6Q4OAQ4yAQ4SAA42AA8CAOkODgEPEgAjDwIA+w5EAQ8CAP8gD0QBww7WAA4SAA8CACMOSAAuAQEUAA8CALEP1gDDDwIAWg8aAsQPAgBZD0MB/zEPygP/Mg9EAf8zDwIA//+vD0gF/zIPAgD/eQ1bCQ0RAA/2BiQOKAMOEgAPAgD/P1AAAAAAAA==" )
 
 [sub_resource type="VoxelChunkBlocky" id=16]
 resource_name = "Chunk[-1,-1,0]"
@@ -55,7 +55,7 @@ margin_start = 1
 margin_end = 1
 library = ExtResource( 4 )
 channel_count = 1
-data_channel = PoolByteArray( 31, 0, 1, 0, 194, 29, 1, 214, 0, 14, 18, 0, 15, 2, 0, 17, 14, 54, 0, 14, 18, 0, 15, 2, 0, 255, 14, 14, 50, 1, 14, 18, 0, 15, 2, 0, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 62, 80, 0, 0, 0, 0, 0 )
+data_channel = PoolByteArray( "HwABAMIdAdYADhIADwIAEQ42AA4SAA8CAP8ODjIBDhIADwIA//////////////////////////8+UAAAAAAA" )
 
 [sub_resource type="VoxelChunkBlocky" id=17]
 resource_name = "Chunk[-1,-1,-1]"
@@ -73,7 +73,7 @@ margin_start = 1
 margin_end = 1
 library = ExtResource( 4 )
 channel_count = 1
-data_channel = PoolByteArray( 31, 0, 1, 0, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 93, 31, 1, 103, 10, 255, 48, 31, 1, 68, 1, 255, 50, 15, 135, 2, 255, 48, 15, 68, 1, 255, 51, 15, 2, 0, 255, 255, 255, 255, 255, 129, 13, 90, 9, 14, 108, 9, 13, 35, 0, 15, 2, 0, 18, 14, 54, 0, 14, 18, 0, 15, 2, 0, 255, 14, 14, 50, 1, 11, 18, 0, 80, 0, 0, 0, 0, 0 )
+data_channel = PoolByteArray( "HwABAP////////////9dHwFnCv8wHwFEAf8yD4cC/zAPRAH/Mw8CAP//////gQ1aCQ5sCQ0jAA8CABIONgAOEgAPAgD/Dg4yAQsSAFAAAAAAAA==" )
 
 [sub_resource type="VoxelChunkBlocky" id=18]
 resource_name = "Chunk[0,-1,0]"
@@ -89,7 +89,7 @@ margin_start = 1
 margin_end = 1
 library = ExtResource( 4 )
 channel_count = 1
-data_channel = PoolByteArray( 31, 0, 1, 0, 255, 65, 31, 1, 84, 1, 255, 65, 15, 2, 0, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 28, 80, 0, 0, 0, 0, 0 )
+data_channel = PoolByteArray( "HwABAP9BHwFUAf9BDwIA//////////////////////////8cUAAAAAAA" )
 
 [sub_resource type="VoxelChunkBlocky" id=19]
 resource_name = "Chunk[-1,0,0]"
@@ -105,7 +105,7 @@ margin_start = 1
 margin_end = 1
 library = ExtResource( 4 )
 channel_count = 1
-data_channel = PoolByteArray( 31, 0, 1, 0, 161, 44, 1, 1, 182, 0, 13, 17, 0, 15, 2, 0, 255, 104, 14, 139, 1, 14, 18, 0, 15, 2, 0, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 78, 80, 0, 0, 0, 0, 0 )
+data_channel = PoolByteArray( "HwABAKEsAQG2AA0RAA8CAP9oDosBDhIADwIA//////////////////////////9OUAAAAAAA" )
 
 [sub_resource type="VoxelChunkBlocky" id=7]
 resource_name = "Chunk[-1,0,-2]"
@@ -122,7 +122,7 @@ margin_start = 1
 margin_end = 1
 library = ExtResource( 4 )
 channel_count = 1
-data_channel = PoolByteArray( 31, 0, 1, 0, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 212, 29, 1, 212, 20, 15, 18, 0, 35, 15, 2, 0, 233, 14, 50, 1, 29, 2, 15, 1, 14, 18, 0, 14, 54, 0, 15, 2, 0, 80, 80, 0, 0, 0, 0, 0 )
+data_channel = PoolByteArray( "HwABAP//////////////////////////1B0B1BQPEgAjDwIA6Q4yAR0CDwEOEgAONgAPAgBQUAAAAAAA" )
 
 [sub_resource type="GIProbeData" id=8]
 bounds = AABB( -16.5585, -7.39551, -12.7828, 33.117, 14.791, 25.5656 )
@@ -174,6 +174,7 @@ editable = true
 max_concurrent_generations = 5
 library = ExtResource( 4 )
 chunks = [ SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 7 ) ]
+num_lods = 5
 __meta__ = {
 "_edit_lock_": true
 }
