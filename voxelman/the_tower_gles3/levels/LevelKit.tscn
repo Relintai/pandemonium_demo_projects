@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://areas/ExitPortal.tscn" type="PackedScene" id=2]
-[ext_resource path="res://environments/red_env.tres" type="Environment" id=3]
+[ext_resource path="res://environments/red_env.tres" type="Environment3D" id=3]
 [ext_resource path="res://library/MainLibrary.tres" type="VoxelLibrarySimple" id=4]
 [ext_resource path="res://player/Player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://particles/flake.png" type="Texture" id=6]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=24 format=2]
 
-[ext_resource path="res://environments/red_env.tres" type="Environment" id=1]
+[ext_resource path="res://environments/red_env.tres" type="Environment3D" id=1]
 [ext_resource path="res://player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://library/MainLibrary.tres" type="VoxelLibrarySimple" id=3]
 [ext_resource path="res://gi_probes/level2.tres" type="GIProbeData" id=4]
