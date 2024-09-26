@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=14 format=3]
 
 [ext_resource path="res://Demos/Utils/DemoInterface.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Demos/Arrive3d/Camera.gd" type="Script" id=2]
@@ -54,7 +54,6 @@ material/0 = ExtResource( 5 )
 [node name="Nose" type="MeshInstance" parent="Arriver"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1.25 )
 mesh = SubResource( 3 )
-material/0 = null
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 0.989952, 0.0720094, -0.121693, 0.0339305, 0.714503, 0.69881, 0.137271, -0.695917, 0.70488, -7.68317, 14.1265, 25.616 )

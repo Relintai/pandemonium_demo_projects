@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=6 format=3]
 
 [ext_resource path="res://Demos/Utils/Line2DDraw.gd" type="Script" id=1]
 [ext_resource path="res://Demos/Quickstart/Agent.gd" type="Script" id=2]
@@ -10,9 +10,7 @@
 
 [node name="BackgroudLayer" parent="." instance=ExtResource( 5 )]
 
-[node name="Player" type="KinematicBody2D" parent="." groups=[
-"Player",
-]]
+[node name="Player" type="KinematicBody2D" parent="." groups=["Player"]]
 position = Vector2( 402.346, 573.791 )
 rotation = 1.5708
 collision_mask = 2
