@@ -1,4 +1,3 @@
-tool
 extends Spatial
 
 export(NodePath) var skeleton_path setget _set_skeleton_path
@@ -78,23 +77,22 @@ func update_skeleton():
 		return
 
 	# get the bone's global transform pose.
-	var rest = skeleton_to_use.get_bone_global_pose(bone)
-
+	var rest : Transform = skeleton_to_use.get_bone_global_pose_no_override(bone)
 	# Convert our position relative to the skeleton's transform.
-	var target_pos = skeleton_to_use.global_transform.xform_inv(global_transform.origin)
+	var target_pos : Vector3 = skeleton_to_use.global_transform.xform_inv(global_transform.origin)
 
 	# Call helper's look_at function with the chosen up axis.
 	if look_at_axis == 0:
-		rest = rest.looking_at(target_pos, Vector3.RIGHT)
+		rest = rest.looking_at(target_pos, skeleton_to_use.global_transform.xform_inv(Vector3.RIGHT))
 	elif look_at_axis == 1:
-		rest = rest.looking_at(target_pos, Vector3.UP)
+		rest = rest.looking_at(target_pos, skeleton_to_use.global_transform.xform_inv(Vector3.UP))
 	elif look_at_axis == 2:
-		rest = rest.looking_at(target_pos, Vector3.FORWARD)
+		rest = rest.looking_at(target_pos, skeleton_to_use.global_transform.xform_inv(Vector3.FORWARD))
 	else:
-		rest = rest.looking_at(target_pos, Vector3.UP)
+		rest = rest.looking_at(target_pos, skeleton_to_use.global_transform.xform_inv(Vector3.UP))
 		if debug_messages:
 			print(name, " - IK_LookAt: Unknown look_at_axis value!")
-
+	
 	# Get the rotation euler of the bone and of this node.
 	var rest_euler = rest.basis.get_euler()
 	var self_euler = global_transform.basis.orthonormalized().get_euler()
