@@ -1,4 +1,3 @@
-tool
 extends Spatial
 
 # A FABRIK IK chain with a middle joint helper.
@@ -14,9 +13,10 @@ export(PoolRealArray) var bones_in_chain_lengths setget _set_bone_chain_lengths
 
 export(int, "_process", "_physics_process", "_notification", "none") var update_mode = 0 setget _set_update_mode
 
-var target: Spatial = null
+var target : Spatial = null
 
-var skeleton: Skeleton
+var skeleton : Skeleton
+var skeleton_up : Vector3
 
 # A dictionary holding all of the bone IDs (from the skeleton) and a dictionary holding
 # all of the bone helper nodes
@@ -151,7 +151,7 @@ func update_skeleton():
 			bone_nodes[i].global_transform = get_bone_transform(i)
 			# If this is not the last bone in the bone chain, make it look at the next bone in the bone chain
 			if i < bone_IDs.size()-1:
-				bone_nodes[i].look_at(get_bone_transform(i+1).origin + skeleton.global_transform.origin, Vector3.UP)
+				bone_nodes[i].look_at(get_bone_transform(i+1).origin + skeleton.global_transform.origin, skeleton_up)
 
 			i += 1
 
@@ -293,7 +293,7 @@ func chain_apply_rotation():
 			else:
 				var b_target = target.global_transform
 				b_target.origin = skeleton.global_transform.xform_inv(b_target.origin)
-				bone_trans = bone_trans.looking_at(b_target.origin, Vector3.UP)
+				bone_trans = bone_trans.looking_at(b_target.origin, skeleton_up)
 
 				# A bit of a hack. Because we only have two bones, we have to use the previous
 				# bone to position the last bone in the chain.
@@ -319,7 +319,7 @@ func chain_apply_rotation():
 			var dir = (b_target_two.origin - b_target.origin).normalized()
 
 			# Make this bone look towards the direction of the next bone
-			bone_trans = bone_trans.looking_at(b_target.origin + dir, Vector3.UP)
+			bone_trans = bone_trans.looking_at(b_target.origin + dir, skeleton_up)
 
 			# Set the position of the bone to the bone target.
 			# Prior to Godot 3.2, this was not necessary, but because we can now completely
@@ -332,7 +332,7 @@ func chain_apply_rotation():
 
 func get_bone_transform(bone, convert_to_world_space = true):
 	# Get the global transform of the bone
-	var ret: Transform = skeleton.get_bone_global_pose(bone_IDs[bones_in_chain[bone]])
+	var ret: Transform = skeleton.get_bone_global_pose_no_override(bone_IDs[bones_in_chain[bone]])
 
 	# If we need to convert the bone position from bone/skeleton space to world space, we
 	# use the Xform of the skeleton (because bone/skeleton space is relative to the position of the skeleton node).
@@ -413,6 +413,7 @@ func _set_skeleton_path(new_value):
 		# If it has the method "get_bone_global_pose" it is likely a Skeleton
 		if temp.has_method("get_bone_global_pose"):
 			skeleton = temp
+			skeleton_up = skeleton.global_transform.xform_inv(Vector3.UP)
 			bone_IDs = {}
 
 			# (Delete all of the old bone nodes and) Make all of the bone nodes for each bone in the IK chain
