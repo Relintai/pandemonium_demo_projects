@@ -1,4 +1,10 @@
-# Godot demo projects
+# Pandemonium demo projects
+
+This repository is now a part of the main [Pandemonium Engine Documentation](https://github.com/Relintai/pandemonium_engine_docs).
+
+See the [07_demo_projects folder](https://github.com/Relintai/pandemonium_engine_docs/tree/master/07_demo_projects).
+
+# Old
 
 Each folder containing a `project.godot` file is a demo project meant to
 be used with [Godot Engine](https://godotengine.org), the open source
